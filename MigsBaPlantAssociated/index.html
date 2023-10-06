@@ -1,0 +1,4856 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/MigsBaPlantAssociated/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
+    
+    
+      
+        <title>Class: MigsBaPlantAssociated - mixs-6-2-for-merge</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.79e020e9.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-migsbaplantassociated" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="mixs-6-2-for-merge" class="md-header__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            mixs-6-2-for-merge
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Class: MigsBaPlantAssociated
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="mixs-6-2-for-merge" class="md-nav__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    mixs-6-2-for-merge
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Index
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../term_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Full term table
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
+    Inheritance
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    Identifier and Mapping Information
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    Schema Source
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    LinkML Source
+  </a>
+  
+    <nav class="md-nav" aria-label="LinkML Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct" class="md-nav__link">
+    Direct
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#induced" class="md-nav__link">
+    Induced
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="class-migsbaplantassociated">Class: MigsBaPlantAssociated</h1>
+<p><em>MIxS data that complies with the MigsBa checklist and the PlantAssociated Extension</em></p>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><a href="../Extension/">Extension</a><ul>
+<li><a href="../PlantAssociated/">PlantAssociated</a><ul>
+<li><strong>MigsBaPlantAssociated</strong> [ <a href="../MigsBa/">MigsBa</a>]</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="terms">Terms</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../samp_name/">samp_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>A local identifier or name that for the material sample used for extracting n...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../lib_screen/">lib_screen</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Specific enrichment or screening methods applied before and/or after creating...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../ref_db/">ref_db</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>List of database(s) used for ORF annotation, along with version number and re...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../nucl_acid_amp/">nucl_acid_amp</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>A link to a literature reference, electronic resource or a standard operating...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../lib_size/">lib_size</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>Total number of clones in the library prepared for the project</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../assembly_name/">assembly_name</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Name/version of the assembly provided by the submitter that is used in the ge...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../temp/">temp</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Temperature of the sample at the time of sampling</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../compl_score/">compl_score</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Completeness score is typically based on either the fraction of markers found...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../nucl_acid_ext/">nucl_acid_ext</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>A link to a literature reference, electronic resource or a standard operating...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../samp_size/">samp_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The total amount or size (volume (ml), mass (g) or area (m2) ) of sample coll...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../isol_growth_condt/">isol_growth_condt</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>Publication reference in the form of pubmed ID (pmid), digital object identif...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../alt/">alt</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Heights of objects such as airplanes, space shuttles, rockets, atmospheric ba...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../source_mat_id/">source_mat_id</a></td>
+<td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>A unique identifier assigned to a material sample (as defined by http://rs</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../extrachrom_elements/">extrachrom_elements</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../Integer/">Integer</a></td>
+<td>Do plasmids exist of significant phenotypic consequence (e</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../estimated_size/">estimated_size</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The estimated size of the genome prior to sequencing</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../samp_vol_we_dna_ext/">samp_vol_we_dna_ext</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Volume (ml) or mass (g) of total collected sample processed for DNA extractio...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../pathogenicity/">pathogenicity</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>To what is the entity pathogenic</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../lib_reads_seqd/">lib_reads_seqd</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>Total number of clones sequenced from the library</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../rel_to_oxygen/">rel_to_oxygen</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../RELTOOXYGENENUM/">RELTOOXYGENENUM</a></td>
+<td>Is this organism an aerobe, anaerobe? Please note that aerobic and anaerobic ...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../encoded_traits/">encoded_traits</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Should include key traits like antibiotic resistance or xenobiotic degradatio...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../samp_collect_device/">samp_collect_device</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The device used to collect an environmental sample</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../number_contig/">number_contig</a></td>
+<td>1..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>Total number of contigs in the cleaned/submitted assembly that makes up a giv...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../biotic_relationship/">biotic_relationship</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../BIOTICRELATIONSHIPENUM/">BIOTICRELATIONSHIPENUM</a></td>
+<td>Description of relationship(s) between the subject organism and other organis...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../num_replicons/">num_replicons</a></td>
+<td>1..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>Reports the number of replicons in a nuclear genome of eukaryotes, in the gen...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../lib_layout/">lib_layout</a></td>
+<td>0..1 <br/> <a href="../LIBLAYOUTENUM/">LIBLAYOUTENUM</a></td>
+<td>Specify whether to expect single, paired, or other configuration of reads</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../assembly_qual/">assembly_qual</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>The assembly quality category is based on sets of criteria outlined for each ...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../ref_biomaterial/">ref_biomaterial</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>Primary publication if isolated before genome publication; otherwise, primary...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../project_name/">project_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>Name of the project within which the sequencing was organized</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../lib_vector/">lib_vector</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Cloning vector type(s) used in construction of libraries</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../host_spec_range/">host_spec_range</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>The range and diversity of host species that an organism is capable of infect...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../neg_cont_type/">neg_cont_type</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../NEGCONTTYPEENUM/">NEGCONTTYPEENUM</a></td>
+<td>The substance or equipment used as a negative control in an investigation</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../adapters/">adapters</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Adapters provide priming sequences for both amplification and sequencing of t...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../assembly_software/">assembly_software</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>Tool(s) used for assembly, including version number and parameters</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../tax_ident/">tax_ident</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../TAXIDENTENUM/">TAXIDENTENUM</a></td>
+<td>The phylogenetic marker(s) used to assign an organism name to the SAG or MAG</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../annot/">annot</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Tool used for annotation, or for cases where annotation was provided by a com...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../trophic_level/">trophic_level</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../TROPHICLEVELENUM/">TROPHICLEVELENUM</a></td>
+<td>Trophic levels are the feeding position in a food chain</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../pos_cont_type/">pos_cont_type</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>The substance, mixture, product, or apparatus used to verify that a process w...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../subspecf_gen_lin/">subspecf_gen_lin</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Information about the genetic distinctness of the sequenced organism below th...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../feat_pred/">feat_pred</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Method used to predict UViGs features such as ORFs, integration site, etc</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../env_local_scale/">env_local_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>Report the entity or entities which are in the sample or specimen s local vic...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../compl_software/">compl_software</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Tools used for completion estimate, i</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../samp_mat_process/">samp_mat_process</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>A brief description of any processing applied to the sample during or after r...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../sim_search_meth/">sim_search_meth</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Tool used to compare ORFs with database, along with version and cutoffs used</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../host_disease_stat/">host_disease_stat</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>List of diseases with which the host has been diagnosed; can include multiple...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../depth/">depth</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>The vertical distance below local surface</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../samp_collect_method/">samp_collect_method</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The method employed for collecting the sample</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../specific_host/">specific_host</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Report the host's taxonomic name and/or NCBI taxonomy ID</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../env_medium/">env_medium</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>Report the environmental material(s) immediately surrounding the sample or sp...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../samp_taxon_id/">samp_taxon_id</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>NCBI taxon id of the sample</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../geo_loc_name/">geo_loc_name</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>The geographical origin of the sample as defined by the country or sea name f...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../collection_date/">collection_date</a></td>
+<td>1..1 <br/> <a href="../Datetime/">Datetime</a></td>
+<td>The time of sampling, either as an instance (single point in time) or interva...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../seq_meth/">seq_meth</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>Sequencing machine used</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../lat_lon/">lat_lon</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>The geographical origin of the sample as defined by latitude and longitude</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../elev/">elev</a></td>
+<td>0..1 <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Elevation of the sampling site is its height above a fixed reference point, m...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a>, <a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../env_broad_scale/">env_broad_scale</a></td>
+<td>1..1 <br/> <a href="../String/">String</a></td>
+<td>Report the major environmental system the sample or specimen came from</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../tax_class/">tax_class</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Method used for taxonomic classification, along with reference database used,...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../experimental_factor/">experimental_factor</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Variable aspects of an experiment design that can be used to describe an expe...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../associated_resource/">associated_resource</a></td>
+<td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>A related resource that is referenced, cited, or otherwise associated to the ...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../sop/">sop</a></td>
+<td>0..* <em>recommended</em> <br/> <a href="../String/">String</a></td>
+<td>Standard operating procedures used in assembly and/or annotation of genomes, ...</td>
+<td><a href="../MigsBa/">MigsBa</a></td>
+</tr>
+<tr>
+<td><a href="../air_temp_regm/">air_temp_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to varying temperatures; sh...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../ances_data/">ances_data</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about either pedigree or other ancestral information description ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../antibiotic_regm/">antibiotic_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving antibiotic administration; should inclu...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../biol_stat/">biol_stat</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The level of genome modification</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../biotic_regm/">biotic_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment(s) involving use of biotic factors, such as bacte...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../chem_administration/">chem_administration</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>List of chemical compounds administered to the host or site where sampling oc...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../chem_mutagen/">chem_mutagen</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Treatment involving use of mutagens; should include the name of mutagen, amou...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../climate_environment/">climate_environment</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Treatment involving an exposure to a particular climate; treatment regimen in...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../cult_root_med/">cult_root_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Name or reference for the hydroponic or in vitro culture rooting medium; can ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../fertilizer_regm/">fertilizer_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving the use of fertilizers; should include ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../fungicide_regm/">fungicide_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of fungicides; should include the n...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../gaseous_environment/">gaseous_environment</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Use of conditions with differing gaseous environments; should include the nam...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../genetic_mod/">genetic_mod</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Genetic modifications of the genome of an organism, which may occur naturally...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../gravity/">gravity</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of gravity factor to study various ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../growth_facil/">growth_facil</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Type of facility where the sampled plant was grown; controlled vocabulary: gr...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../growth_habit/">growth_habit</a></td>
+<td>0..1 <br/> <a href="../GROWTHHABITENUM/">GROWTHHABITENUM</a></td>
+<td>Characteristic shape, appearance or growth form of a plant species</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../growth_hormone_regm/">growth_hormone_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of growth hormones; should include ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../herbicide_regm/">herbicide_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of herbicides; information about tr...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_age/">host_age</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Age of host at the time of sampling; relevant scale depends on species and st...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_common_name/">host_common_name</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Common name of the host</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_dry_mass/">host_dry_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Measurement of dry mass</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_genotype/">host_genotype</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Observed genotype</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_height/">host_height</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The height of subject</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_subspecf_genlin/">host_subspecf_genlin</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about the genetic distinctness of the host organism below the sub...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_length/">host_length</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The length of subject</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_life_stage/">host_life_stage</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Description of life stage of host</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_phenotype/">host_phenotype</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Phenotype of human or other host</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_taxid/">host_taxid</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>NCBI taxon id of the host, e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_tot_mass/">host_tot_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Total mass of the host at collection, the unit depends on host</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_wet_mass/">host_wet_mass</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Measurement of wet mass</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../humidity_regm/">humidity_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to varying degree of humidi...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../light_regm/">light_regm</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Information about treatment(s) involving exposure to light, including both li...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../mechanical_damage/">mechanical_damage</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about any mechanical damage exerted on the plant; can include mul...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../mineral_nutr_regm/">mineral_nutr_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving the use of mineral supplements; should ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../misc_param/">misc_param</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Any other measurement performed or parameter collected, that is not listed he...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../non_min_nutr_regm/">non_min_nutr_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving the exposure of plant to non-mineral nu...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../organism_count/">organism_count</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Total cell count of any organism (or group of organisms) per gram, volume or ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../oxy_stat_samp/">oxy_stat_samp</a></td>
+<td>0..1 <br/> <a href="../OXYSTATSAMPENUM/">OXYSTATSAMPENUM</a></td>
+<td>Oxygenation status of sample</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../ph_regm/">ph_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving exposure of plants to varying levels of...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../perturbation/">perturbation</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Type of perturbation, e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../pesticide_regm/">pesticide_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of insecticides; should include the...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../plant_growth_med/">plant_growth_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Specification of the media for growing the plants or tissue cultured samples,...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../plant_product/">plant_product</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Substance produced by the plant, where the sample was obtained from</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../plant_sex/">plant_sex</a></td>
+<td>0..1 <br/> <a href="../PLANTSEXENUM/">PLANTSEXENUM</a></td>
+<td>Sex of the reproductive parts on the whole plant, e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../plant_struc/">plant_struc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Name of plant structure the sample was obtained from; for Plant Ontology (PO)...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../radiation_regm/">radiation_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving exposure of plant or a plant part to a ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../rainfall_regm/">rainfall_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to a given amount of rainfa...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_cond/">root_cond</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Relevant rooting conditions such as field plot size, sowing density, containe...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_carbon/">root_med_carbon</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Source of organic carbon in the culture rooting medium; e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_macronutr/">root_med_macronutr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Measurement of the culture rooting medium macronutrients (N,P, K, Ca, Mg, S);...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_micronutr/">root_med_micronutr</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Measurement of the culture rooting medium micronutrients (Fe, Mn, Zn, B, Cu, ...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_suppl/">root_med_suppl</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Organic supplements of the culture rooting medium, such as vitamins, amino ac...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_ph/">root_med_ph</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td>pH measurement of the culture rooting medium; e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_regl/">root_med_regl</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Growth regulators in the culture rooting medium such as cytokinins, auxins, g...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../root_med_solid/">root_med_solid</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Specification of the solidifying agent in the culture rooting medium; e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../salt_regm/">salt_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving use of salts as supplement to liquid an...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_capt_status/">samp_capt_status</a></td>
+<td>0..1 <br/> <a href="../SAMPCAPTSTATUSENUM/">SAMPCAPTSTATUSENUM</a></td>
+<td>Reason for the sample</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_dis_stage/">samp_dis_stage</a></td>
+<td>0..1 <br/> <a href="../SAMPDISSTAGEENUM/">SAMPDISSTAGEENUM</a></td>
+<td>Stage of the disease at the time of sample collection, e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../salinity/">salinity</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>The total concentration of all dissolved salts in a liquid or solid sample</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_store_dur/">samp_store_dur</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Duration for which the sample was stored</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_store_loc/">samp_store_loc</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Location at which sample was stored, usually name of a specific freezer/room</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../samp_store_temp/">samp_store_temp</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Temperature at which sample was stored, e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../season_environment/">season_environment</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Treatment involving an exposure to a particular season (e</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../standing_water_regm/">standing_water_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Treatment involving an exposure to standing water during a plant's life span,...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../tiss_cult_growth_med/">tiss_cult_growth_med</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Description of plant tissue culture growth media used</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../water_temp_regm/">water_temp_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to water with varying degre...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../watering_regm/">watering_regm</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>Information about treatment involving an exposure to watering frequencies, tr...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+<tr>
+<td><a href="../host_symbiont/">host_symbiont</a></td>
+<td>0..* <br/> <a href="../String/">String</a></td>
+<td>The taxonomic name of the organism(s) found living in mutualistic, commensali...</td>
+<td><a href="../PlantAssociated/">PlantAssociated</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: https://w3id.org/mixs-6-2-rc</li>
+</ul>
+<h2 id="linkml-source">LinkML Source</h2>
+<!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+
+<h3 id="direct">Direct</h3>
+<details>
+
+<pre><code class="language-yaml">name: MigsBaPlantAssociated
+description: MIxS data that complies with the MigsBa checklist and the PlantAssociated
+  Extension
+title: MigsBa combined with PlantAssociated
+in_subset:
+- combination_classes
+from_schema: https://w3id.org/mixs-6-2-rc
+is_a: PlantAssociated
+mixins:
+- MigsBa
+class_uri: MIXS:0010003_0016010
+
+</code></pre>
+
+</details>
+
+<h3 id="induced">Induced</h3>
+<details>
+
+<pre><code class="language-yaml">name: MigsBaPlantAssociated
+description: MIxS data that complies with the MigsBa checklist and the PlantAssociated
+  Extension
+title: MigsBa combined with PlantAssociated
+in_subset:
+- combination_classes
+from_schema: https://w3id.org/mixs-6-2-rc
+is_a: PlantAssociated
+mixins:
+- MigsBa
+attributes:
+  samp_name:
+    name: samp_name
+    annotations:
+      Preferred_unit:
+        tag: Preferred_unit
+        value: ''
+    description: A local identifier or name that for the material sample used for
+      extracting nucleic acids, and subsequent sequencing. It can refer either to
+      the original material collected or to any derived sub-samples. It can have any
+      format, but we suggest that you make it concise, unique and consistent within
+      your lab, and as informative as possible. INSDC requires every sample name from
+      a single Submitter to be unique. Use of a globally unique identifier for the
+      field source_mat_id is recommended in addition to sample_name
+    title: sample name
+    examples:
+    - value: ISDsoil1
+    in_subset:
+    - investigation
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - sample
+    slot_uri: MIXS:0001107
+    multivalued: false
+    alias: samp_name
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+  lib_screen:
+    name: lib_screen
+    description: Specific enrichment or screening methods applied before and/or after
+      creating libraries
+    title: library screening strategy
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0000043
+    multivalued: false
+    alias: lib_screen
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    required: false
+    recommended: false
+  ref_db:
+    name: ref_db
+    description: List of database(s) used for ORF annotation, along with version number
+      and reference to website or publication
+    title: reference database(s)
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{database};{version};{reference}'
+    slot_uri: MIXS:0000062
+    multivalued: false
+    alias: ref_db
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: false
+    recommended: false
+  nucl_acid_amp:
+    name: nucl_acid_amp
+    description: A link to a literature reference, electronic resource or a standard
+      operating procedure (SOP), that describes the enzymatic amplification (PCR,
+      TMA, NASBA) of specific nucleic acids
+    title: nucleic acid amplification
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000038
+    multivalued: false
+    alias: nucl_acid_amp
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    recommended: true
+    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
+    structured_pattern:
+      syntax: ^{PMID}|{DOI}|{URL}$
+      interpolated: true
+      partial_match: true
+  lib_size:
+    name: lib_size
+    description: Total number of clones in the library prepared for the project
+    title: library size
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000039
+    multivalued: false
+    alias: lib_size
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: integer
+    required: false
+    recommended: false
+  assembly_name:
+    name: assembly_name
+    description: Name/version of the assembly provided by the submitter that is used
+      in the genome browsers and in the community
+    title: assembly name
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text} {text}'
+    slot_uri: MIXS:0000057
+    multivalued: false
+    alias: assembly_name
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    recommended: true
+  temp:
+    name: temp
+    description: Temperature of the sample at the time of sampling
+    title: temperature
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000113
+    multivalued: false
+    alias: temp
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  compl_score:
+    name: compl_score
+    description: 'Completeness score is typically based on either the fraction of
+      markers found as compared to a database or the percent of a genome found as
+      compared to a closely related reference genome. High Quality Draft: &gt;90%, Medium
+      Quality Draft: &gt;50%, and Low Quality Draft: &lt; 50% should have the indicated
+      completeness scores'
+    title: completeness score
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '[high|med|low];{percentage}'
+    slot_uri: MIXS:0000069
+    multivalued: false
+    alias: compl_score
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+    required: false
+    recommended: false
+  nucl_acid_ext:
+    name: nucl_acid_ext
+    description: A link to a literature reference, electronic resource or a standard
+      operating procedure (SOP), that describes the material separation to recover
+      the nucleic acid fraction from a sample
+    title: nucleic acid extraction
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000037
+    multivalued: false
+    alias: nucl_acid_ext
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    recommended: true
+    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
+    structured_pattern:
+      syntax: ^{PMID}|{DOI}|{URL}$
+      interpolated: true
+      partial_match: true
+  samp_size:
+    name: samp_size
+    description: The total amount or size (volume (ml), mass (g) or area (m2) ) of
+      sample collected
+    title: amount or size of sample collected
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000001
+    multivalued: false
+    alias: samp_size
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  isol_growth_condt:
+    name: isol_growth_condt
+    description: Publication reference in the form of pubmed ID (pmid), digital object
+      identifier (doi) or url for isolation and growth condition specifications of
+      the organism/material
+    title: isolation and growth condition
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000003
+    multivalued: false
+    alias: isol_growth_condt
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+    - Agriculture
+    range: string
+    required: true
+    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
+    structured_pattern:
+      syntax: ^{PMID}|{DOI}|{URL}$
+      interpolated: true
+      partial_match: true
+  alt:
+    name: alt
+    description: Heights of objects such as airplanes, space shuttles, rockets, atmospheric
+      balloons and heights of places such as atmospheric layers and clouds. It is
+      used to measure the height of an object which is above the earth's surface.
+      In this context, the altitude measurement is the vertical distance between the
+      earth's surface above sea level and the sampled position in the air
+    title: altitude
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000094
+    multivalued: false
+    alias: alt
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Air
+    - HostAssociated
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - SymbiontAssociated
+    range: string
+    recommended: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  source_mat_id:
+    name: source_mat_id
+    description: A unique identifier assigned to a material sample (as defined by
+      http://rs.tdwg.org/dwc/terms/materialSampleID, and as opposed to a particular
+      digital record of a material sample) used for extracting nucleic acids, and
+      subsequent sequencing. The identifier can refer either to the original material
+      collected or to any derived sub-samples. The INSDC qualifiers /specimen_voucher,
+      /bio_material, or /culture_collection may or may not share the same value as
+      the source_mat_id field. For instance, the /specimen_voucher qualifier and source_mat_id
+      may both contain 'UAM:Herps:14' , referring to both the specimen voucher and
+      sampled tissue with the same identifier. However, the /culture_collection qualifier
+      may refer to a value from an initial culture (e.g. ATCC:11775) while source_mat_id
+      would refer to an identifier from some derived culture from which the nucleic
+      acids were extracted (e.g. xatc123 or ark:/2154/R2)
+    title: source material identifiers
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0000026
+    multivalued: true
+    alias: source_mat_id
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - SymbiontAssociated
+    range: string
+    recommended: true
+  extrachrom_elements:
+    name: extrachrom_elements
+    description: Do plasmids exist of significant phenotypic consequence (e.g. ones
+      that determine virulence or antibiotic resistance). Megaplasmids? Other plasmids
+      (borrelia has 15+ plasmids)
+    title: extrachromosomal elements
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000023
+    multivalued: false
+    alias: extrachrom_elements
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MimarksC
+    range: integer
+    recommended: true
+  estimated_size:
+    name: estimated_size
+    description: The estimated size of the genome prior to sequencing. Of particular
+      importance in the sequencing of (eukaryotic) genome which could remain in draft
+      form for a long or unspecified period
+    title: estimated size
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{integer} bp'
+    slot_uri: MIXS:0000024
+    multivalued: false
+    alias: estimated_size
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    range: string
+    required: false
+    recommended: false
+  samp_vol_we_dna_ext:
+    name: samp_vol_we_dna_ext
+    description: 'Volume (ml) or mass (g) of total collected sample processed for
+      DNA extraction. Note: total sample collected should be entered under the term
+      Sample Size (MIXS:0000001)'
+    title: sample volume or weight for DNA extraction
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000111
+    multivalued: false
+    alias: samp_vol_we_dna_ext
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  pathogenicity:
+    name: pathogenicity
+    description: To what is the entity pathogenic
+    title: known pathogenicity
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0000027
+    multivalued: false
+    alias: pathogenicity
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    - Agriculture
+    range: string
+    recommended: true
+  lib_reads_seqd:
+    name: lib_reads_seqd
+    description: Total number of clones sequenced from the library
+    title: library reads sequenced
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000040
+    multivalued: false
+    alias: lib_reads_seqd
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: integer
+    required: false
+    recommended: false
+  rel_to_oxygen:
+    name: rel_to_oxygen
+    description: Is this organism an aerobe, anaerobe? Please note that aerobic and
+      anaerobic are valid descriptors for microbial environments
+    title: relationship to oxygen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000015
+    multivalued: false
+    alias: rel_to_oxygen
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    range: REL_TO_OXYGEN_ENUM
+    recommended: true
+  encoded_traits:
+    name: encoded_traits
+    description: Should include key traits like antibiotic resistance or xenobiotic
+      degradation phenotypes for plasmids, converting genes for phage
+    title: encoded traits
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0000034
+    multivalued: false
+    alias: encoded_traits
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsPl
+    - MigsVi
+    range: string
+    required: false
+    recommended: false
+  samp_collect_device:
+    name: samp_collect_device
+    description: The device used to collect an environmental sample. This field accepts
+      terms listed under environmental sampling device (http://purl.obolibrary.org/obo/ENVO).
+      This field also accepts terms listed under specimen collection device (http://purl.obolibrary.org/obo/GENEPIO_0002094)
+    title: sample collection device
+    examples:
+    - value: swab, biopsy, niskin bottle, push core, drag swab [GENEPIO:0002713]
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{termLabel} [{termID}]|{text}'
+    slot_uri: MIXS:0000002
+    multivalued: false
+    alias: samp_collect_device
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: false
+    recommended: false
+  number_contig:
+    name: number_contig
+    description: Total number of contigs in the cleaned/submitted assembly that makes
+      up a given genome, SAG, MAG, or UViG
+    title: number of contigs
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000060
+    multivalued: false
+    alias: number_contig
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: integer
+    required: true
+  biotic_relationship:
+    name: biotic_relationship
+    description: Description of relationship(s) between the subject organism and other
+      organism(s) it is associated with. E.g., parasite on species X; mutualist with
+      species Y. The target organism is the subject of the relationship, and the other
+      organism(s) is the object
+    title: observed biotic relationship
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000028
+    multivalued: false
+    alias: biotic_relationship
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - MimarksC
+    - Miuvig
+    - Agriculture
+    range: BIOTIC_RELATIONSHIP_ENUM
+    recommended: true
+  num_replicons:
+    name: num_replicons
+    description: Reports the number of replicons in a nuclear genome of eukaryotes,
+      in the genome of a bacterium or archaea or the number of segments in a segmented
+      virus. Always applied to the haploid chromosome count of a eukaryote
+    title: number of replicons
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{integer}'
+    slot_uri: MIXS:0000022
+    alias: num_replicons
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    range: integer
+    required: true
+  lib_layout:
+    name: lib_layout
+    description: Specify whether to expect single, paired, or other configuration
+      of reads
+    title: library layout
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000041
+    multivalued: false
+    alias: lib_layout
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: LIB_LAYOUT_ENUM
+    required: false
+    recommended: false
+  assembly_qual:
+    name: assembly_qual
+    description: 'The assembly quality category is based on sets of criteria outlined
+      for each assembly quality category. For MISAG/MIMAG; Finished: Single, validated,
+      contiguous sequence per replicon without gaps or ambiguities with a consensus
+      error rate equivalent to Q50 or better. High Quality Draft:Multiple fragments
+      where gaps span repetitive regions. Presence of the 23S, 16S and 5S rRNA genes
+      and at least 18 tRNAs. Medium Quality Draft:Many fragments with little to no
+      review of assembly other than reporting of standard assembly statistics. Low
+      Quality Draft:Many fragments with little to no review of assembly other than
+      reporting of standard assembly statistics. Assembly statistics include, but
+      are not limited to total assembly size, number of contigs, contig N50/L50, and
+      maximum contig length. For MIUVIG; Finished: Single, validated, contiguous sequence
+      per replicon without gaps or ambiguities, with extensive manual review and editing
+      to annotate putative gene functions and transcriptional units. High-quality
+      draft genome: One or multiple fragments, totaling   90% of the expected genome
+      or replicon sequence or predicted complete. Genome fragment(s): One or multiple
+      fragments, totalling &lt; 90% of the expected genome or replicon sequence, or for
+      which no genome size could be estimated'
+    title: assembly quality
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '[Finished genome|High-quality draft genome|Medium-quality
+      draft genome|Low-quality draft genome|Genome fragment(s)]'
+    slot_uri: MIXS:0000056
+    multivalued: false
+    alias: assembly_qual
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    required: true
+  ref_biomaterial:
+    name: ref_biomaterial
+    description: Primary publication if isolated before genome publication; otherwise,
+      primary genome report
+    title: reference for biomaterial
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000025
+    multivalued: false
+    alias: ref_biomaterial
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$$
+    structured_pattern:
+      syntax: ^{PMID}|{DOI}|{URL}$
+      interpolated: true
+      partial_match: true
+  project_name:
+    name: project_name
+    description: Name of the project within which the sequencing was organized
+    title: project name
+    examples:
+    - value: Forest soil metagenome
+    in_subset:
+    - investigation
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - project
+    slot_uri: MIXS:0000092
+    multivalued: false
+    alias: project_name
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: true
+  lib_vector:
+    name: lib_vector
+    description: Cloning vector type(s) used in construction of libraries
+    title: library vector
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0000042
+    multivalued: false
+    alias: lib_vector
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    required: false
+    recommended: false
+  host_spec_range:
+    name: host_spec_range
+    description: The range and diversity of host species that an organism is capable
+      of infecting, defined by NCBI taxonomy identifier
+    title: host specificity or range
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{integer}'
+    slot_uri: MIXS:0000030
+    multivalued: true
+    alias: host_spec_range
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    - Agriculture
+    range: string
+    required: false
+    recommended: false
+  neg_cont_type:
+    name: neg_cont_type
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: enumeration or text
+    description: The substance or equipment used as a negative control in an investigation
+    title: negative control type
+    in_subset:
+    - investigation
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - type
+    slot_uri: MIXS:0001321
+    multivalued: false
+    alias: neg_cont_type
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: NEG_CONT_TYPE_ENUM
+    recommended: true
+  adapters:
+    name: adapters
+    description: Adapters provide priming sequences for both amplification and sequencing
+      of the sample-library fragments. Both adapters should be reported; in uppercase
+      letters
+    title: adapters
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{dna};{dna}'
+    slot_uri: MIXS:0000048
+    multivalued: false
+    alias: adapters
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    recommended: true
+  assembly_software:
+    name: assembly_software
+    description: Tool(s) used for assembly, including version number and parameters
+    title: assembly software
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000058
+    multivalued: false
+    alias: assembly_software
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    required: true
+    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{software};{version};{parameters}$
+      interpolated: true
+      partial_match: true
+  tax_ident:
+    name: tax_ident
+    description: The phylogenetic marker(s) used to assign an organism name to the
+      SAG or MAG
+    title: taxonomic identity marker
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000053
+    alias: tax_ident
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: TAX_IDENT_ENUM
+    recommended: true
+  annot:
+    name: annot
+    description: Tool used for annotation, or for cases where annotation was provided
+      by a community jamboree or model organism database rather than by a specific
+      submitter
+    title: annotation
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0000059
+    multivalued: false
+    alias: annot
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    recommended: true
+  trophic_level:
+    name: trophic_level
+    description: Trophic levels are the feeding position in a food chain. Microbes
+      can be a range of producers (e.g. chemolithotroph)
+    title: trophic level
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000032
+    multivalued: false
+    alias: trophic_level
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MimarksC
+    - Agriculture
+    range: TROPHIC_LEVEL_ENUM
+    recommended: true
+  pos_cont_type:
+    name: pos_cont_type
+    description: The substance, mixture, product, or apparatus used to verify that
+      a process which is part of an investigation delivers a true positive
+    title: positive control type
+    in_subset:
+    - investigation
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - type
+    string_serialization: '{term} or {text}'
+    slot_uri: MIXS:0001322
+    multivalued: false
+    alias: pos_cont_type
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    recommended: true
+  subspecf_gen_lin:
+    name: subspecf_gen_lin
+    description: Information about the genetic distinctness of the sequenced organism
+      below the subspecies level, e.g., serovar, serotype, biotype, ecotype, or any
+      relevant genetic typing schemes like Group I plasmid. Subspecies should not
+      be recorded in this term, but in the NCBI taxonomy. Supply both the lineage
+      name and the lineage rank separated by a colon, e.g., biovar:abc123
+    title: subspecific genetic lineage
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{rank name}:{text}'
+    slot_uri: MIXS:0000020
+    multivalued: false
+    alias: subspecf_gen_lin
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - MimarksC
+    - FoodFoodProductionFacility
+    range: string
+    recommended: true
+  feat_pred:
+    name: feat_pred
+    description: Method used to predict UViGs features such as ORFs, integration site,
+      etc
+    title: feature prediction
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000061
+    multivalued: false
+    alias: feat_pred
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: false
+    recommended: false
+    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{software};{version};{parameters}$
+      interpolated: true
+      partial_match: true
+  env_local_scale:
+    name: env_local_scale
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: Environmental entities having causal influences upon the entity at
+          time of sampling
+    description: 'Report the entity or entities which are in the sample or specimen
+      s local vicinity and which you believe have significant causal influences on
+      your sample or specimen. We recommend using EnvO terms which are of smaller
+      spatial grain than your entry for env_broad_scale. Terms, such as anatomical
+      sites, from other OBO Library ontologies which interoperate with EnvO (e.g.
+      UBERON) are accepted in this field. EnvO documentation about how to use the
+      field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS'
+    title: local environmental context
+    examples:
+    - value: hillside [ENVO:01000333]
+    in_subset:
+    - environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - context
+    - environmental
+    string_serialization: '{termLabel} [{termID}]'
+    slot_uri: MIXS:0000013
+    multivalued: false
+    alias: env_local_scale
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+  compl_software:
+    name: compl_software
+    description: Tools used for completion estimate, i.e. checkm, anvi'o, busco
+    title: completeness software
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{software};{version}'
+    slot_uri: MIXS:0000070
+    multivalued: false
+    alias: compl_software
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Misag
+    - Miuvig
+    range: string
+    required: false
+    recommended: false
+  samp_mat_process:
+    name: samp_mat_process
+    description: A brief description of any processing applied to the sample during
+      or after retrieving the sample from environment, or a link to the relevant protocol(s)
+      performed
+    title: sample material processing
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000016
+    multivalued: false
+    alias: samp_mat_process
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    required: false
+    recommended: false
+  sim_search_meth:
+    name: sim_search_meth
+    description: Tool used to compare ORFs with database, along with version and cutoffs
+      used
+    title: similarity search method
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000063
+    multivalued: false
+    alias: sim_search_meth
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: false
+    recommended: false
+    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{software};{version};{parameters}$
+      interpolated: true
+      partial_match: true
+  host_disease_stat:
+    name: host_disease_stat
+    description: List of diseases with which the host has been diagnosed; can include
+      multiple diagnoses. The value of the field depends on host; for humans the terms
+      should be chosen from the DO (Human Disease Ontology) at https://www.disease-ontology.org,
+      non-human host diseases are free text
+    title: host disease status
+    examples:
+    - value: rabies [DOID:11260]
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{termLabel} [{termID}]|{text}'
+    slot_uri: MIXS:0000031
+    multivalued: false
+    alias: host_disease_stat
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsVi
+    - Miuvig
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: true
+  depth:
+    name: depth
+    description: The vertical distance below local surface. For sediment or soil samples
+      depth is measured from sediment or soil surface, respectively. Depth can be
+      reported as an interval for subsurface samples
+    title: depth
+    examples:
+    - value: 10 meter
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000018
+    multivalued: false
+    alias: depth
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    recommended: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  samp_collect_method:
+    name: samp_collect_method
+    description: The method employed for collecting the sample
+    title: sample collection method
+    examples:
+    - value: swabbing
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0001225
+    multivalued: false
+    alias: samp_collect_method
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: false
+    recommended: false
+    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      interpolated: true
+      partial_match: true
+  specific_host:
+    name: specific_host
+    description: Report the host's taxonomic name and/or NCBI taxonomy ID
+    title: host scientific name
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}|{NCBI taxid}'
+    slot_uri: MIXS:0000029
+    multivalued: false
+    alias: specific_host
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsPl
+    - MigsVi
+    - Miuvig
+    - Agriculture
+    range: string
+    recommended: true
+  env_medium:
+    name: env_medium
+    description: 'Report the environmental material(s) immediately surrounding the
+      sample or specimen at the time of sampling. We recommend using subclasses of
+      ''environmental material'' (http://purl.obolibrary.org/obo/ENVO_00010483). EnvO
+      documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS
+      . Terms from other OBO ontologies are permissible as long as they reference
+      mass/volume nouns (e.g. air, water, blood) and not discrete, countable entities
+      (e.g. a tree, a leaf, a table top)'
+    title: environmental medium
+    examples:
+    - value: bluegrass field soil [ENVO:00005789]
+    in_subset:
+    - environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - environmental
+    slot_uri: MIXS:0000014
+    multivalued: false
+    alias: env_medium
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
+    structured_pattern:
+      syntax: ^{termLabel} \[{termID}\]$
+      interpolated: true
+      partial_match: true
+  samp_taxon_id:
+    name: samp_taxon_id
+    description: NCBI taxon id of the sample.  Maybe be a single taxon or mixed taxa
+      sample. Use 'synthetic metagenome  for mock community/positive controls, or
+      'blank sample' for negative controls
+    title: taxonomy ID of DNA sample
+    examples:
+    - value: Gut Metagenome [NCBITaxon:749906]
+    in_subset:
+    - investigation
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - dna
+    - identifier
+    - sample
+    - taxon
+    slot_uri: MIXS:0001320
+    multivalued: false
+    alias: samp_taxon_id
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[NCBITaxon:\d+\]$
+    structured_pattern:
+      syntax: ^{text} \[{NCBItaxon_id}\]$
+      interpolated: true
+      partial_match: true
+  geo_loc_name:
+    name: geo_loc_name
+    description: The geographical origin of the sample as defined by the country or
+      sea name followed by specific region name. Country or sea names should be chosen
+      from the INSDC country list (http://insdc.org/country.html), or the GAZ ontology
+      (http://purl.bioontology.org/ontology/GAZ)
+    title: geographic location (country and/or sea,region)
+    examples:
+    - value: 'USA: Maryland, Bethesda'
+    in_subset:
+    - environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - geographic
+    - location
+    slot_uri: MIXS:0000010
+    multivalued: false
+    alias: geo_loc_name
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: '^([^\s-]{1,2}|[^\s-]+.+[^\s-]+): ([^\s-]{1,2}|[^\s-]+.+[^\s-]+), ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$'
+    structured_pattern:
+      syntax: '^{text}: {text}, {text}$'
+      interpolated: true
+      partial_match: true
+  collection_date:
+    name: collection_date
+    description: 'The time of sampling, either as an instance (single point in time)
+      or interval. In case no exact time is available, the date/time can be right
+      truncated i.e. all of these are valid times: 2008-01-23T19:23:10+00:00; 2008-01-23T19:23:10;
+      2008-01-23; 2008-01; 2008; Except: 2008-01; 2008 all are ISO8601 compliant'
+    title: collection date
+    examples:
+    - value: '2013-03-25T12:42:31+01:00'
+    in_subset:
+    - environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - date
+    slot_uri: MIXS:0000011
+    multivalued: false
+    alias: collection_date
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    range: datetime
+    required: true
+  seq_meth:
+    name: seq_meth
+    description: Sequencing machine used. Where possible the term should be taken
+      from the OBI list of DNA sequencers (http://purl.obolibrary.org/obo/OBI_0400103)
+    title: sequencing method
+    examples:
+    - value: 454 Genome Sequencer FLX [OBI:0000702]
+    in_subset:
+    - sequencing
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - method
+    slot_uri: MIXS:0000050
+    multivalued: false
+    alias: seq_meth
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: true
+    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+)|(([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\])$
+    structured_pattern:
+      syntax: ^{text}|({termLabel} \[{termID}\])$
+      interpolated: true
+      partial_match: true
+  lat_lon:
+    name: lat_lon
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: decimal degrees,  limit to 8 decimal points
+    description: The geographical origin of the sample as defined by latitude and
+      longitude. The values should be reported in decimal degrees and in WGS84 system
+    title: geographic location (latitude and longitude)
+    examples:
+    - value: 50.586825 6.408977
+    in_subset:
+    - environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - geographic
+    - location
+    string_serialization: '{float} {float}'
+    slot_uri: MIXS:0000009
+    alias: lat_lon
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - SymbiontAssociated
+    range: string
+    required: true
+    pattern: ^(-?((?:[0-8]?[0-9](?:\.\d{0,8})?)|90)) -?[0-9]+(?:\.[0-9]{0,8})?$|^-?(1[0-7]{1,2})$
+    structured_pattern:
+      syntax: ^{lat} {lon}$
+      interpolated: true
+      partial_match: true
+  elev:
+    name: elev
+    description: Elevation of the sampling site is its height above a fixed reference
+      point, most commonly the mean sea level. Elevation is mainly used when referring
+      to points on the earth's surface, while altitude is used for points above the
+      surface, such as an aircraft in flight or a spacecraft in orbit
+    title: elevation
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000093
+    multivalued: false
+    alias: elev
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HydrocarbonResourcesCores
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - Water
+    range: string
+    recommended: true
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  env_broad_scale:
+    name: env_broad_scale
+    description: 'Report the major environmental system the sample or specimen came
+      from. The system(s) identified should have a coarse spatial grain, to provide
+      the general environmental context of where the sampling was done (e.g. in the
+      desert or a rainforest). We recommend using subclasses of EnvO s biome class:  http://purl.obolibrary.org/obo/ENVO_00000428.
+      EnvO documentation about how to use the field: https://github.com/EnvironmentOntology/envo/wiki/Using-ENVO-with-MIxS'
+    title: broad-scale environmental context
+    examples:
+    - value: rangeland biome [ENVO:01000247]
+    in_subset:
+    - environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - context
+    - environmental
+    slot_uri: MIXS:0000012
+    multivalued: false
+    alias: env_broad_scale
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: true
+    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
+    structured_pattern:
+      syntax: ^{termLabel} \[{termID}\]$
+      interpolated: true
+      partial_match: true
+  tax_class:
+    name: tax_class
+    description: Method used for taxonomic classification, along with reference database
+      used, classification rank, and thresholds used to classify new genomes
+    title: taxonomic classification
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000064
+    multivalued: false
+    alias: tax_class
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - Mims
+    - Misag
+    - Miuvig
+    range: string
+    required: false
+    recommended: false
+  experimental_factor:
+    name: experimental_factor
+    description: Variable aspects of an experiment design that can be used to describe
+      an experiment, or set of experiments, in an increasingly detailed manner. This
+      field accepts ontology terms from Experimental Factor Ontology (EFO) and/or
+      Ontology for Biomedical Investigations (OBI)
+    title: experimental factor
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{termLabel} [{termID}]|{text}'
+    slot_uri: MIXS:0000008
+    multivalued: true
+    alias: experimental_factor
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    range: string
+    required: false
+    recommended: false
+    pattern: ^\S+.*\S+ \[[a-zA-Z]{2,}:\d+\]$
+  associated_resource:
+    name: associated_resource
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: reference to resource
+    description: A related resource that is referenced, cited, or otherwise associated
+      to the sequence
+    title: relevant electronic resources
+    examples:
+    - value: http://www.earthmicrobiome.org/
+    in_subset:
+    - sequencing
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - resource
+    string_serialization: '{PMID}|{DOI}|{URL}'
+    slot_uri: MIXS:0000091
+    multivalued: true
+    alias: associated_resource
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    recommended: true
+  sop:
+    name: sop
+    description: Standard operating procedures used in assembly and/or annotation
+      of genomes, metagenomes or environmental sequences
+    title: relevant standard operating procedures
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{PMID}|{DOI}|{URL}'
+    slot_uri: MIXS:0000090
+    multivalued: true
+    alias: sop
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - MigsBa
+    - MigsEu
+    - MigsOrg
+    - MigsPl
+    - MigsVi
+    - Mimag
+    - MimarksC
+    - MimarksS
+    - Mims
+    - Misag
+    - Miuvig
+    - Agriculture
+    range: string
+    recommended: true
+  air_temp_regm:
+    name: air_temp_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: temperature value;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: meter
+    description: Information about treatment involving an exposure to varying temperatures;
+      should include the temperature, treatment regimen including how many times the
+      treatment was repeated, how long each treatment lasted, and the start and end
+      time of the entire treatment; can include different temperature regimens
+    title: air temperature regimen
+    examples:
+    - value: 25 degree Celsius;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - air
+    - regimen
+    - temperature
+    string_serialization: '{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000551
+    multivalued: true
+    alias: air_temp_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  ances_data:
+    name: ances_data
+    description: Information about either pedigree or other ancestral information
+      description (e.g. parental variety in case of mutant or selection), e.g. A/3*B
+      (meaning [(A x B) x B] x B)
+    title: ancestral data
+    examples:
+    - value: A/3*B
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000247
+    multivalued: false
+    alias: ances_data
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  antibiotic_regm:
+    name: antibiotic_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: antibiotic name;antibiotic amount;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: milligram
+    description: Information about treatment involving antibiotic administration;
+      should include the name of antibiotic, amount administered, treatment regimen
+      including how many times the treatment was repeated, how long each treatment
+      lasted, and the start and end time of the entire treatment; can include multiple
+      antibiotic regimens
+    title: antibiotic regimen
+    examples:
+    - value: penicillin;5 milligram;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - regimen
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000553
+    multivalued: true
+    alias: antibiotic_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  biol_stat:
+    name: biol_stat
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: enumeration
+    description: The level of genome modification
+    title: biological status
+    examples:
+    - value: natural
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - status
+    string_serialization: '[wild|natural|semi-natural|inbred line|breeder''s line|hybrid|clonal
+      selection|mutant]'
+    slot_uri: MIXS:0000858
+    multivalued: false
+    alias: biol_stat
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - HostAssociated
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  biotic_regm:
+    name: biotic_regm
+    description: Information about treatment(s) involving use of biotic factors, such
+      as bacteria, viruses or fungi
+    title: biotic regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0001038
+    multivalued: true
+    alias: biotic_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  chem_administration:
+    name: chem_administration
+    description: List of chemical compounds administered to the host or site where
+      sampling occurred, and when (e.g. Antibiotics, n fertilizer, air filter); can
+      include multiple compounds. For chemical entities of biological interest ontology
+      (chebi) (v 163), http://purl.bioontology.org/ontology/chebi
+    title: chemical administration
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{termLabel} [{termID}];{timestamp}'
+    slot_uri: MIXS:0000751
+    multivalued: true
+    alias: chem_administration
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+  chem_mutagen:
+    name: chem_mutagen
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: mutagen name;mutagen amount;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: milligram per liter
+    description: Treatment involving use of mutagens; should include the name of mutagen,
+      amount administered, treatment regimen including how many times the treatment
+      was repeated, how long each treatment lasted, and the start and end time of
+      the entire treatment; can include multiple mutagen regimens
+    title: chemical mutagen
+    examples:
+    - value: nitrous acid;0.5 milligram per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000555
+    multivalued: true
+    alias: chem_mutagen
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  climate_environment:
+    name: climate_environment
+    description: Treatment involving an exposure to a particular climate; treatment
+      regimen including how many times the treatment was repeated, how long each treatment
+      lasted, and the start and end time of the entire treatment; can include multiple
+      climates
+    title: climate environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0001040
+    multivalued: true
+    alias: climate_environment
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  cult_root_med:
+    name: cult_root_med
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: name, PMID,DOI or url
+    description: Name or reference for the hydroponic or in vitro culture rooting
+      medium; can be the name of a commonly used medium or reference to a specific
+      medium, e.g. Murashige and Skoog medium. If the medium has not been formally
+      published, use the rooting medium descriptors
+    title: culture rooting medium
+    examples:
+    - value: http://himedialabs.com/TD/PT158.pdf
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - culture
+    string_serialization: '{text}|{PMID}|{DOI}|{URL}'
+    slot_uri: MIXS:0001041
+    multivalued: false
+    alias: cult_root_med
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  fertilizer_regm:
+    name: fertilizer_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: fertilizer name;fertilizer amount;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: gram, mole per liter, milligram per liter
+    description: Information about treatment involving the use of fertilizers; should
+      include the name of fertilizer, amount administered, treatment regimen including
+      how many times the treatment was repeated, how long each treatment lasted, and
+      the start and end time of the entire treatment; can include multiple fertilizer
+      regimens
+    title: fertilizer regimen
+    examples:
+    - value: urea;0.6 milligram per liter;R2/2018-05-11:T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - regimen
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000556
+    multivalued: true
+    alias: fertilizer_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  fungicide_regm:
+    name: fungicide_regm
+    description: Information about treatment involving use of fungicides; should include
+      the name of fungicide, amount administered, treatment regimen including how
+      many times the treatment was repeated, how long each treatment lasted, and the
+      start and end time of the entire treatment; can include multiple fungicide regimens
+    title: fungicide regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000557
+    multivalued: true
+    alias: fungicide_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  gaseous_environment:
+    name: gaseous_environment
+    description: Use of conditions with differing gaseous environments; should include
+      the name of gaseous compound, amount administered, treatment duration, interval
+      and total experimental duration; can include multiple gaseous environment regimens
+    title: gaseous environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000558
+    multivalued: true
+    alias: gaseous_environment
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  genetic_mod:
+    name: genetic_mod
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: PMID, DOI, URL or text
+    description: Genetic modifications of the genome of an organism, which may occur
+      naturally by spontaneous mutation, or be introduced by some experimental means,
+      e.g. specification of a transgene or the gene knocked-out or details of transient
+      transfection
+    title: genetic modification
+    examples:
+    - value: aox1A transgenic
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{PMID}|{DOI}|{URL}'
+    slot_uri: MIXS:0000859
+    multivalued: false
+    alias: genetic_mod
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  gravity:
+    name: gravity
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: gravity factor value;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: meter per square second, g
+    description: Information about treatment involving use of gravity factor to study
+      various types of responses in presence, absence or modified levels of gravity;
+      treatment regimen including how many times the treatment was repeated, how long
+      each treatment lasted, and the start and end time of the entire treatment; can
+      include multiple treatments
+    title: gravity
+    examples:
+    - value: 12 g;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000559
+    multivalued: true
+    alias: gravity
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  growth_facil:
+    name: growth_facil
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: free text or CO
+    description: 'Type of facility where the sampled plant was grown; controlled vocabulary:
+      growth chamber, open top chamber, glasshouse, experimental garden, field. Alternatively
+      use Crop Ontology (CO) terms, see http://www.cropontology.org/ontology/CO_715/Crop%20Research'
+    title: growth facility
+    examples:
+    - value: Growth chamber [CO_715:0000189]
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - facility
+    - growth
+    string_serialization: '{text}|{termLabel} [{termID}]'
+    slot_uri: MIXS:0001043
+    multivalued: false
+    alias: growth_facil
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  growth_habit:
+    name: growth_habit
+    description: Characteristic shape, appearance or growth form of a plant species
+    title: growth habit
+    examples:
+    - value: spreading
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - growth
+    slot_uri: MIXS:0001044
+    multivalued: false
+    alias: growth_habit
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: GROWTH_HABIT_ENUM
+    required: false
+    recommended: false
+  growth_hormone_regm:
+    name: growth_hormone_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: growth hormone name;growth hormone amount;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: gram, mole per liter, milligram per liter
+    description: Information about treatment involving use of growth hormones; should
+      include the name of growth hormone, amount administered, treatment regimen including
+      how many times the treatment was repeated, how long each treatment lasted, and
+      the start and end time of the entire treatment; can include multiple growth
+      hormone regimens
+    title: growth hormone regimen
+    examples:
+    - value: abscisic acid;0.5 milligram per liter;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - growth
+    - regimen
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000560
+    multivalued: true
+    alias: growth_hormone_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  herbicide_regm:
+    name: herbicide_regm
+    description: Information about treatment involving use of herbicides; information
+      about treatment involving use of growth hormones; should include the name of
+      herbicide, amount administered, treatment regimen including how many times the
+      treatment was repeated, how long each treatment lasted, and the start and end
+      time of the entire treatment; can include multiple regimens
+    title: herbicide regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000561
+    multivalued: true
+    alias: herbicide_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  host_age:
+    name: host_age
+    description: Age of host at the time of sampling; relevant scale depends on species
+      and study, e.g. Could be seconds for amoebae or centuries for trees
+    title: host age
+    examples:
+    - value: 10 days
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000255
+    multivalued: false
+    alias: host_age
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  host_common_name:
+    name: host_common_name
+    description: Common name of the host
+    title: host common name
+    examples:
+    - value: rice
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000248
+    multivalued: false
+    alias: host_common_name
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+  host_dry_mass:
+    name: host_dry_mass
+    annotations:
+      Preferred_unit:
+        tag: Preferred_unit
+        value: kilogram, gram
+    description: Measurement of dry mass
+    title: host dry mass
+    examples:
+    - value: 500 gram
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - dry
+    - host
+    - host.
+    - mass
+    slot_uri: MIXS:0000257
+    multivalued: false
+    alias: host_dry_mass
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  host_genotype:
+    name: host_genotype
+    description: Observed genotype
+    title: host genotype
+    examples:
+    - value: Ts
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000365
+    multivalued: false
+    alias: host_genotype
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+  host_height:
+    name: host_height
+    description: The height of subject
+    title: host height
+    examples:
+    - value: 1 meter
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000264
+    multivalued: false
+    alias: host_height
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  host_subspecf_genlin:
+    name: host_subspecf_genlin
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: Genetic lineage below lowest rank of NCBI taxonomy, which is subspecies,
+          e.g. serovar, biotype, ecotype, variety, cultivar
+    description: Information about the genetic distinctness of the host organism below
+      the subspecies level e.g., serovar, serotype, biotype, ecotype, variety, cultivar,
+      or any relevant genetic typing schemes like Group I plasmid. Subspecies should
+      not be recorded in this term, but in the NCBI taxonomy. Supply both the lineage
+      name and the lineage rank separated by a colon, e.g., biovar:abc123
+    title: host subspecific genetic lineage
+    examples:
+    - value: 'serovar:Newport, variety:glabrum, cultivar: Red Delicious'
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - host
+    - host.
+    - lineage
+    string_serialization: '{rank name}:{text}'
+    slot_uri: MIXS:0001318
+    multivalued: true
+    alias: host_subspecf_genlin
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  host_length:
+    name: host_length
+    description: The length of subject
+    title: host length
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000256
+    multivalued: false
+    alias: host_length
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  host_life_stage:
+    name: host_life_stage
+    description: Description of life stage of host
+    title: host life stage
+    examples:
+    - value: adult
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0000251
+    multivalued: false
+    alias: host_life_stage
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+  host_phenotype:
+    name: host_phenotype
+    description: Phenotype of human or other host. Use terms from the phenotypic quality
+      ontology (pato) or the Human Phenotype Ontology (HP)
+    title: host phenotype
+    examples:
+    - value: seed pod; green [PATO:0000320]
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{termLabel} [{termID}]'
+    slot_uri: MIXS:0000874
+    multivalued: false
+    alias: host_phenotype
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+  host_taxid:
+    name: host_taxid
+    description: NCBI taxon id of the host, e.g. 9606
+    title: host taxid
+    examples:
+    - value: '4530'
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{NCBI taxid}'
+    slot_uri: MIXS:0000250
+    multivalued: false
+    alias: host_taxid
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+  host_tot_mass:
+    name: host_tot_mass
+    description: Total mass of the host at collection, the unit depends on host
+    title: host total mass
+    examples:
+    - value: 2500 gram
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000263
+    multivalued: false
+    alias: host_tot_mass
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  host_wet_mass:
+    name: host_wet_mass
+    annotations:
+      Preferred_unit:
+        tag: Preferred_unit
+        value: kilogram, gram
+    description: Measurement of wet mass
+    title: host wet mass
+    examples:
+    - value: 1500 gram
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - host
+    - host.
+    - mass
+    - wet
+    slot_uri: MIXS:0000567
+    multivalued: false
+    alias: host_wet_mass
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  humidity_regm:
+    name: humidity_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: humidity value;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: gram per cubic meter
+    description: Information about treatment involving an exposure to varying degree
+      of humidity; information about treatment involving use of growth hormones; should
+      include amount of humidity administered, treatment regimen including how many
+      times the treatment was repeated, how long each treatment lasted, and the start
+      and end time of the entire treatment; can include multiple regimens
+    title: humidity regimen
+    examples:
+    - value: 25 gram per cubic meter;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - humidity
+    - regimen
+    string_serialization: '{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000568
+    multivalued: true
+    alias: humidity_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  light_regm:
+    name: light_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: exposure type;light intensity;light quality
+      Preferred_unit:
+        tag: Preferred_unit
+        value: lux; micrometer, nanometer, angstrom
+    description: Information about treatment(s) involving exposure to light, including
+      both light intensity and quality
+    title: light regimen
+    examples:
+    - value: incandescant light;10 lux;450 nanometer
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - light
+    - regimen
+    string_serialization: '{text};{float} {unit};{float} {unit}'
+    slot_uri: MIXS:0000569
+    multivalued: false
+    alias: light_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  mechanical_damage:
+    name: mechanical_damage
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: damage type;body site
+    description: Information about any mechanical damage exerted on the plant; can
+      include multiple damages and sites
+    title: mechanical damage
+    examples:
+    - value: pruning;bark
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{text}'
+    slot_uri: MIXS:0001052
+    multivalued: true
+    alias: mechanical_damage
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  mineral_nutr_regm:
+    name: mineral_nutr_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: mineral nutrient name;mineral nutrient amount;treatment interval and
+          duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: gram, mole per liter, milligram per liter
+    description: Information about treatment involving the use of mineral supplements;
+      should include the name of mineral nutrient, amount administered, treatment
+      regimen including how many times the treatment was repeated, how long each treatment
+      lasted, and the start and end time of the entire treatment; can include multiple
+      mineral nutrient regimens
+    title: mineral nutrient regimen
+    examples:
+    - value: potassium;15 gram;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - mineral
+    - nutrient
+    - regimen
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000570
+    multivalued: true
+    alias: mineral_nutr_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  misc_param:
+    name: misc_param
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: parameter name;measurement value
+    description: Any other measurement performed or parameter collected, that is not
+      listed here
+    title: miscellaneous parameter
+    examples:
+    - value: Bicarbonate ion concentration;2075 micromole per kilogram
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - parameter
+    string_serialization: '{text};{float} {unit}'
+    slot_uri: MIXS:0000752
+    multivalued: true
+    alias: misc_param
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - Soil
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+  non_min_nutr_regm:
+    name: non_min_nutr_regm
+    description: Information about treatment involving the exposure of plant to non-mineral
+      nutrient such as oxygen, hydrogen or carbon; should include the name of non-mineral
+      nutrient, amount administered, treatment regimen including how many times the
+      treatment was repeated, how long each treatment lasted, and the start and end
+      time of the entire treatment; can include multiple non-mineral nutrient regimens
+    title: non-mineral nutrient regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000571
+    multivalued: true
+    alias: non_min_nutr_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  organism_count:
+    name: organism_count
+    description: 'Total cell count of any organism (or group of organisms) per gram,
+      volume or area of sample, should include name of organism followed by count.
+      The method that was used for the enumeration (e.g. qPCR, atp, mpn, etc.) Should
+      also be provided. (example: total prokaryotes; 3.5e7 cells per ml; qpcr)'
+    title: organism count
+    examples:
+    - value: total prokaryotes;3.5e7 cells per milliliter;qPCR
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit};[ATP|MPN|qPCR|other]'
+    slot_uri: MIXS:0000103
+    multivalued: true
+    alias: organism_count
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - BuiltEnvironment
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+  oxy_stat_samp:
+    name: oxy_stat_samp
+    description: Oxygenation status of sample
+    title: oxygenation status of sample
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000753
+    multivalued: false
+    alias: oxy_stat_samp
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: OXY_STAT_SAMP_ENUM
+    required: false
+    recommended: false
+  ph_regm:
+    name: ph_regm
+    description: Information about treatment involving exposure of plants to varying
+      levels of ph of the growth media, treatment regimen including how many times
+      the treatment was repeated, how long each treatment lasted, and the start and
+      end time of the entire treatment; can include multiple regimen
+    title: pH regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{float};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0001056
+    multivalued: true
+    alias: ph_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  perturbation:
+    name: perturbation
+    description: Type of perturbation, e.g. chemical administration, physical disturbance,
+      etc., coupled with perturbation regimen including how many times the perturbation
+      was repeated, how long each perturbation lasted, and the start and end time
+      of the entire perturbation period; can include multiple perturbation types
+    title: perturbation
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000754
+    multivalued: true
+    alias: perturbation
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+  pesticide_regm:
+    name: pesticide_regm
+    description: Information about treatment involving use of insecticides; should
+      include the name of pesticide, amount administered, treatment regimen including
+      how many times the treatment was repeated, how long each treatment lasted, and
+      the start and end time of the entire treatment; can include multiple pesticide
+      regimens
+    title: pesticide regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000573
+    multivalued: true
+    alias: pesticide_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  plant_growth_med:
+    name: plant_growth_med
+    description: Specification of the media for growing the plants or tissue cultured
+      samples, e.g. soil, aeroponic, hydroponic, in vitro solid culture medium, in
+      vitro liquid culture medium. Recommended value is a specific value from EO:plant
+      growth medium (follow this link for terms http://purl.obolibrary.org/obo/EO_0007147)
+      or other controlled vocabulary
+    title: plant growth medium
+    examples:
+    - value: hydroponic plant culture media [EO:0007067]
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{termLabel} [{termID}] or [husk|other artificial liquid
+      medium|other artificial solid medium|peat moss|perlite|pumice|sand|soil|vermiculite|water]'
+    slot_uri: MIXS:0001057
+    multivalued: false
+    alias: plant_growth_med
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  plant_product:
+    name: plant_product
+    description: Substance produced by the plant, where the sample was obtained from
+    title: plant product
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0001058
+    multivalued: false
+    alias: plant_product
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  plant_sex:
+    name: plant_sex
+    description: Sex of the reproductive parts on the whole plant, e.g. pistillate,
+      staminate, monoecieous, hermaphrodite
+    title: plant sex
+    examples:
+    - value: Hermaphroditic
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - plant
+    slot_uri: MIXS:0001059
+    multivalued: false
+    alias: plant_sex
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: PLANT_SEX_ENUM
+    required: false
+    recommended: false
+  plant_struc:
+    name: plant_struc
+    description: Name of plant structure the sample was obtained from; for Plant Ontology
+      (PO) (v releases/2017-12-14) terms, see http://purl.bioontology.org/ontology/PO,
+      e.g. petiole epidermis (PO_0000051). If an individual flower is sampled, the
+      sex of it can be recorded here
+    title: plant structure
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0001060
+    multivalued: false
+    alias: plant_struc
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^([^\s-]{1,2}|[^\s-]+.+[^\s-]+) \[[a-zA-Z]{2,}:[a-zA-Z0-9]\d+\]$
+    structured_pattern:
+      syntax: ^{termLabel} \[{termID}\]$
+      interpolated: true
+      partial_match: true
+  radiation_regm:
+    name: radiation_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: radiation type name;radiation amount;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: rad, gray
+    description: Information about treatment involving exposure of plant or a plant
+      part to a particular radiation regimen; should include the radiation type, amount
+      or intensity administered, treatment regimen including how many times the treatment
+      was repeated, how long each treatment lasted, and the start and end time of
+      the entire treatment; can include multiple radiation regimens
+    title: radiation regimen
+    examples:
+    - value: gamma radiation;60 gray;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - regimen
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000575
+    multivalued: true
+    alias: radiation_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  rainfall_regm:
+    name: rainfall_regm
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: measurement value;treatment interval and duration
+      Preferred_unit:
+        tag: Preferred_unit
+        value: millimeter
+    description: Information about treatment involving an exposure to a given amount
+      of rainfall, treatment regimen including how many times the treatment was repeated,
+      how long each treatment lasted, and the start and end time of the entire treatment;
+      can include multiple regimens
+    title: rainfall regimen
+    examples:
+    - value: 15 millimeter;R2/2018-05-11T14:30/2018-05-11T19:30/P1H30M
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - rain
+    - regimen
+    string_serialization: '{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000576
+    multivalued: true
+    alias: rainfall_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  root_cond:
+    name: root_cond
+    description: Relevant rooting conditions such as field plot size, sowing density,
+      container dimensions, number of plants per container
+    title: rooting conditions
+    examples:
+    - value: http://himedialabs.com/TD/PT158.pdf
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - condition
+    slot_uri: MIXS:0001061
+    multivalued: false
+    alias: root_cond
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      interpolated: true
+      partial_match: true
+  root_med_carbon:
+    name: root_med_carbon
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: carbon source name;measurement value
+      Preferred_unit:
+        tag: Preferred_unit
+        value: milligram per liter
+    description: Source of organic carbon in the culture rooting medium; e.g. sucrose
+    title: rooting medium carbon
+    examples:
+    - value: sucrose
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - carbon
+    string_serialization: '{text};{float} {unit}'
+    slot_uri: MIXS:0000577
+    multivalued: false
+    alias: root_med_carbon
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  root_med_macronutr:
+    name: root_med_macronutr
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: macronutrient name;measurement value
+      Preferred_unit:
+        tag: Preferred_unit
+        value: milligram per liter
+    description: Measurement of the culture rooting medium macronutrients (N,P, K,
+      Ca, Mg, S); e.g. KH2PO4 (170 mg/L)
+    title: rooting medium macronutrients
+    examples:
+    - value: KH2PO4;170  milligram per liter
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - macronutrients
+    string_serialization: '{text};{float} {unit}'
+    slot_uri: MIXS:0000578
+    multivalued: false
+    alias: root_med_macronutr
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  root_med_micronutr:
+    name: root_med_micronutr
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: micronutrient name;measurement value
+      Preferred_unit:
+        tag: Preferred_unit
+        value: milligram per liter
+    description: Measurement of the culture rooting medium micronutrients (Fe, Mn,
+      Zn, B, Cu, Mo); e.g. H3BO3 (6.2 mg/L)
+    title: rooting medium micronutrients
+    examples:
+    - value: H3BO3;6.2  milligram per liter
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - micronutrients
+    string_serialization: '{text};{float} {unit}'
+    slot_uri: MIXS:0000579
+    multivalued: false
+    alias: root_med_micronutr
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  root_med_suppl:
+    name: root_med_suppl
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: supplement name;measurement value
+      Preferred_unit:
+        tag: Preferred_unit
+        value: milligram per liter
+    description: Organic supplements of the culture rooting medium, such as vitamins,
+      amino acids, organic acids, antibiotics activated charcoal; e.g. nicotinic acid
+      (0.5  mg/L)
+    title: rooting medium organic supplements
+    examples:
+    - value: nicotinic acid;0.5 milligram per liter
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - organic
+    string_serialization: '{text};{float} {unit}'
+    slot_uri: MIXS:0000580
+    multivalued: false
+    alias: root_med_suppl
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  root_med_ph:
+    name: root_med_ph
+    description: pH measurement of the culture rooting medium; e.g. 5.5
+    title: rooting medium pH
+    examples:
+    - value: '7.5'
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - ph
+    slot_uri: MIXS:0001062
+    multivalued: false
+    alias: root_med_ph
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - FoodFarmEnvironment
+    - PlantAssociated
+    range: float
+    required: false
+    recommended: false
+  root_med_regl:
+    name: root_med_regl
+    annotations:
+      Expected_value:
+        tag: Expected_value
+        value: regulator name;measurement value
+      Preferred_unit:
+        tag: Preferred_unit
+        value: milligram per liter
+    description: Growth regulators in the culture rooting medium such as cytokinins,
+      auxins, gybberellins, abscisic acid; e.g. 0.5  mg/L NAA
+    title: rooting medium regulators
+    examples:
+    - value: abscisic acid;0.75 milligram per liter
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit}'
+    slot_uri: MIXS:0000581
+    multivalued: false
+    alias: root_med_regl
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  root_med_solid:
+    name: root_med_solid
+    description: Specification of the solidifying agent in the culture rooting medium;
+      e.g. agar
+    title: rooting medium solidifier
+    examples:
+    - value: agar
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0001063
+    multivalued: false
+    alias: root_med_solid
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  salt_regm:
+    name: salt_regm
+    description: Information about treatment involving use of salts as supplement
+      to liquid and soil growth media; should include the name of salt, amount administered,
+      treatment regimen including how many times the treatment was repeated, how long
+      each treatment lasted, and the start and end time of the entire treatment; can
+      include multiple salt regimens
+    title: salt regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000582
+    multivalued: true
+    alias: salt_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  samp_capt_status:
+    name: samp_capt_status
+    description: Reason for the sample
+    title: sample capture status
+    examples:
+    - value: farm sample
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - sample
+    - status
+    slot_uri: MIXS:0000860
+    multivalued: false
+    alias: samp_capt_status
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - HostAssociated
+    - PlantAssociated
+    range: SAMP_CAPT_STATUS_ENUM
+    required: false
+    recommended: false
+  samp_dis_stage:
+    name: samp_dis_stage
+    description: Stage of the disease at the time of sample collection, e.g. inoculation,
+      penetration, infection, growth and reproduction, dissemination of pathogen
+    title: sample disease stage
+    examples:
+    - value: infection
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - disease
+    - sample
+    slot_uri: MIXS:0000249
+    multivalued: false
+    alias: samp_dis_stage
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - HostAssociated
+    - PlantAssociated
+    range: SAMP_DIS_STAGE_ENUM
+    required: false
+    recommended: false
+  salinity:
+    name: salinity
+    annotations:
+      Preferred_unit:
+        tag: Preferred_unit
+        value: practical salinity unit, percentage
+    description: The total concentration of all dissolved salts in a liquid or solid
+      sample. While salinity can be measured by a complete chemical analysis, this
+      method is difficult and time consuming. More often, it is instead derived from
+      the conductivity measurement. This is known as practical salinity. These derivations
+      compare the specific conductance of the sample to a salinity standard such as
+      seawater
+    title: salinity
+    examples:
+    - value: 25 practical salinity unit
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - salinity
+    slot_uri: MIXS:0000183
+    multivalued: false
+    alias: salinity
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Air
+    - FoodFarmEnvironment
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  samp_store_dur:
+    name: samp_store_dur
+    description: Duration for which the sample was stored. Indicate the duration for
+      which the sample was stored written in ISO 8601 format
+    title: sample storage duration
+    from_schema: https://w3id.org/mixs-6-2-rc
+    slot_uri: MIXS:0000116
+    multivalued: false
+    alias: samp_store_dur
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+    pattern: ^P(?:(?:\d+D|\d+M(?:\d+D)?|\d+Y(?:\d+M(?:\d+D)?)?)(?:T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S))?|T(?:\d+H(?:\d+M(?:\d+S)?)?|\d+M(?:\d+S)?|\d+S)|\d+W)$
+    structured_pattern:
+      syntax: ^{duration}$
+      interpolated: true
+      partial_match: true
+  samp_store_loc:
+    name: samp_store_loc
+    description: Location at which sample was stored, usually name of a specific freezer/room
+    title: sample storage location
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0000755
+    multivalued: false
+    alias: samp_store_loc
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+  samp_store_temp:
+    name: samp_store_temp
+    annotations:
+      Preferred_unit:
+        tag: Preferred_unit
+        value: degree Celsius
+    description: Temperature at which sample was stored, e.g. -80 degree Celsius
+    title: sample storage temperature
+    examples:
+    - value: -80 degree Celsius
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - sample
+    - storage
+    - temperature
+    slot_uri: MIXS:0000110
+    multivalued: false
+    alias: samp_store_temp
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - Air
+    - FoodAnimalAndAnimalFeed
+    - FoodFarmEnvironment
+    - FoodFoodProductionFacility
+    - FoodHumanFoods
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - HydrocarbonResourcesCores
+    - HydrocarbonResourcesFluidsSwabs
+    - MicrobialMatBiofilm
+    - MiscellaneousNaturalOrArtificialEnvironment
+    - PlantAssociated
+    - Sediment
+    - SymbiontAssociated
+    - WastewaterSludge
+    - Water
+    range: string
+    required: false
+    recommended: false
+    pattern: ^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)?
+      *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{scientific_float}( *- *{scientific_float})? *{text}$
+      interpolated: true
+      partial_match: true
+  season_environment:
+    name: season_environment
+    description: Treatment involving an exposure to a particular season (e.g. Winter,
+      summer, rabi, rainy etc.), treatment regimen including how many times the treatment
+      was repeated, how long each treatment lasted, and the start and end time of
+      the entire treatment
+    title: seasonal environment
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0001068
+    multivalued: true
+    alias: season_environment
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  standing_water_regm:
+    name: standing_water_regm
+    description: Treatment involving an exposure to standing water during a plant's
+      life span, types can be flood water or standing water, treatment regimen including
+      how many times the treatment was repeated, how long each treatment lasted, and
+      the start and end time of the entire treatment; can include multiple regimens
+    title: standing water regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0001069
+    multivalued: true
+    alias: standing_water_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  tiss_cult_growth_med:
+    name: tiss_cult_growth_med
+    description: Description of plant tissue culture growth media used
+    title: tissue culture growth media
+    examples:
+    - value: https://link.springer.com/content/pdf/10.1007/BF02796489.pdf
+    from_schema: https://w3id.org/mixs-6-2-rc
+    keywords:
+    - culture
+    - growth
+    slot_uri: MIXS:0001070
+    multivalued: false
+    alias: tiss_cult_growth_med
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+    pattern: ^^PMID:\d+$|^doi:10.\d{2,9}/.*$|^https?:\/\/(?:www\.)?[-a-zA-Z0-9@:%._\+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b(?:[-a-zA-Z0-9()@:%_\+.~#?&amp;\/=]*)$|([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$
+    structured_pattern:
+      syntax: ^{PMID}|{DOI}|{URL}|{text}$
+      interpolated: true
+      partial_match: true
+  water_temp_regm:
+    name: water_temp_regm
+    description: Information about treatment involving an exposure to water with varying
+      degree of temperature, treatment regimen including how many times the treatment
+      was repeated, how long each treatment lasted, and the start and end time of
+      the entire treatment; can include multiple regimens
+    title: water temperature regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000590
+    multivalued: true
+    alias: water_temp_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  watering_regm:
+    name: watering_regm
+    description: Information about treatment involving an exposure to watering frequencies,
+      treatment regimen including how many times the treatment was repeated, how long
+      each treatment lasted, and the start and end time of the entire treatment; can
+      include multiple regimens
+    title: watering regimen
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{float} {unit};{Rn/start_time/end_time/duration}'
+    slot_uri: MIXS:0000591
+    multivalued: true
+    alias: watering_regm
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - PlantAssociated
+    range: string
+    required: false
+    recommended: false
+  host_symbiont:
+    name: host_symbiont
+    description: The taxonomic name of the organism(s) found living in mutualistic,
+      commensalistic, or parasitic symbiosis with the specific host. The sampled symbiont
+      can have its own symbionts. For example, parasites may have hyperparasites (=parasites
+      of the parasite)
+    title: observed host symbionts
+    examples:
+    - value: flukeworms
+    from_schema: https://w3id.org/mixs-6-2-rc
+    string_serialization: '{text}'
+    slot_uri: MIXS:0001298
+    multivalued: true
+    alias: host_symbiont
+    owner: MigsBaPlantAssociated
+    domain_of:
+    - Agriculture
+    - HostAssociated
+    - HumanAssociated
+    - HumanGut
+    - HumanOral
+    - HumanSkin
+    - HumanVaginal
+    - PlantAssociated
+    - SymbiontAssociated
+    range: string
+    required: false
+    recommended: false
+class_uri: MIXS:0010003_0016010
+
+</code></pre>
+
+</details>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,518 +1,377 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/FoodFarmEnvironment/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
+    
+    
+      
+        <title>Class: FoodFarmEnvironment - mixs-6-2-for-merge</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.79e020e9.min.css">
+      
+      
 
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/FoodFarmEnvironment/" rel="canonical"/>
-<link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.5.3, mkdocs-material-9.4.3" name="generator"/>
-<title>Class: FoodFarmEnvironment - mixs-6-2-for-merge</title>
-<link href="../assets/stylesheets/main.79e020e9.min.css" rel="stylesheet"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
-<body dir="ltr">
-<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#class-foodfarmenvironment">
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-foodfarmenvironment" class="md-skip">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
 <header class="md-header md-header--shadow" data-md-component="header">
-<nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="mixs-6-2-for-merge" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-6-2-for-merge">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-</a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
-</label>
-<div class="md-header__title" data-md-component="header-title">
-<div class="md-header__ellipsis">
-<div class="md-header__topic">
-<span class="md-ellipsis">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="mixs-6-2-for-merge" class="md-header__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             mixs-6-2-for-merge
           </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Class: FoodFarmEnvironment
             
           </span>
-</div>
-</div>
-</div>
-<label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-</label>
-<div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
-<label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
-</label>
-<nav aria-label="Search" class="md-search__options">
-<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
-</button>
-</nav>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="search-result">
-<div class="md-search-result__meta">
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
             Initializing search
           </div>
-<ol class="md-search-result__list" role="presentation"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="md-header__source">
-<a class="md-source" data-md-component="source" href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-</nav>
+      </div>
+    
+  </nav>
+  
 </header>
-<div class="md-container" data-md-component="container">
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="mixs-6-2-for-merge" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-6-2-for-merge">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-</a>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="mixs-6-2-for-merge" class="md-nav__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
     mixs-6-2-for-merge
   </label>
-<div class="md-nav__source">
-<a class="md-source" data-md-component="source" href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="..">
-<span class="md-ellipsis">
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
     Index
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../about/">
-<span class="md-ellipsis">
-    About
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../term_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Full term table
   </span>
-</a>
-</li>
-</ul>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
     Inheritance
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-    Slots
+      
+        <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
     Identifier and Mapping Information
   </a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
     Schema Source
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-    Mappings
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
     LinkML Source
   </a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
+  
+    <nav class="md-nav" aria-label="LinkML Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct" class="md-nav__link">
     Direct
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
+        
+          <li class="md-nav__item">
+  <a href="#induced" class="md-nav__link">
     Induced
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset">
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
 <h1 id="class-foodfarmenvironment">Class: FoodFarmEnvironment</h1>
 <p><em>food-farm environment extension</em></p>
-<p>URI: <a href="https://w3id.org/mixs/0016020">MIXS:0016020</a></p>
-<div class="mermaid"> classDiagram
-    class FoodFarmEnvironment
-      Extension &lt;|-- FoodFarmEnvironment
-
-      FoodFarmEnvironment : adjacent_environment
-
-      FoodFarmEnvironment : air_flow_impede
-
-      FoodFarmEnvironment : air_PM_concen
-
-      FoodFarmEnvironment : ances_data
-
-      FoodFarmEnvironment : anim_water_method
-
-      FoodFarmEnvironment : animal_diet
-
-      FoodFarmEnvironment : animal_feed_equip
-
-      FoodFarmEnvironment : animal_group_size
-
-      FoodFarmEnvironment : animal_housing
-
-      FoodFarmEnvironment : animal_intrusion
-
-      FoodFarmEnvironment : biotic_regm
-
-      FoodFarmEnvironment : chem_administration
-
-      FoodFarmEnvironment : collection_date
-
-      FoodFarmEnvironment : conduc
-
-      FoodFarmEnvironment : crop_rotation
-
-      FoodFarmEnvironment : crop_yield
-
-      FoodFarmEnvironment : cult_isol_date
-
-      FoodFarmEnvironment : cult_result
-
-          FoodFarmEnvironment --|&gt; CULT_RESULT_ENUM : cult_result
-
-      FoodFarmEnvironment : cult_result_org
-
-      FoodFarmEnvironment : cult_target
-
-      FoodFarmEnvironment : date_extr_weath
-
-      FoodFarmEnvironment : depth
-
-      FoodFarmEnvironment : enrichment_protocol
-
-      FoodFarmEnvironment : extr_weather_event
-
-          FoodFarmEnvironment --|&gt; EXTR_WEATHER_EVENT_ENUM : extr_weather_event
-
-      FoodFarmEnvironment : farm_equip
-
-      FoodFarmEnvironment : farm_equip_san
-
-      FoodFarmEnvironment : farm_equip_san_freq
-
-      FoodFarmEnvironment : farm_equip_shared
-
-      FoodFarmEnvironment : farm_water_source
-
-          FoodFarmEnvironment --|&gt; FARM_WATER_SOURCE_ENUM : farm_water_source
-
-      FoodFarmEnvironment : fertilizer_admin
-
-      FoodFarmEnvironment : fertilizer_date
-
-      FoodFarmEnvironment : food_clean_proc
-
-          FoodFarmEnvironment --|&gt; FOOD_CLEAN_PROC_ENUM : food_clean_proc
-
-      FoodFarmEnvironment : food_contact_surf
-
-      FoodFarmEnvironment : food_contain_wrap
-
-      FoodFarmEnvironment : food_harvest_proc
-
-      FoodFarmEnvironment : food_pack_medium
-
-      FoodFarmEnvironment : food_preserv_proc
-
-      FoodFarmEnvironment : food_prod_char
-
-      FoodFarmEnvironment : food_product_type
-
-      FoodFarmEnvironment : food_quality_date
-
-      FoodFarmEnvironment : food_source
-
-      FoodFarmEnvironment : food_trav_mode
-
-      FoodFarmEnvironment : food_trav_vehic
-
-      FoodFarmEnvironment : food_treat_proc
-
-      FoodFarmEnvironment : genetic_mod
-
-      FoodFarmEnvironment : geo_loc_name
-
-      FoodFarmEnvironment : growth_habit
-
-          FoodFarmEnvironment --|&gt; GROWTH_HABIT_ENUM : growth_habit
-
-      FoodFarmEnvironment : growth_medium
-
-      FoodFarmEnvironment : host_age
-
-      FoodFarmEnvironment : host_disease_stat
-
-      FoodFarmEnvironment : host_dry_mass
-
-      FoodFarmEnvironment : host_genotype
-
-      FoodFarmEnvironment : host_height
-
-      FoodFarmEnvironment : host_length
-
-      FoodFarmEnvironment : host_phenotype
-
-      FoodFarmEnvironment : host_subspecf_genlin
-
-      FoodFarmEnvironment : host_taxid
-
-      FoodFarmEnvironment : host_tot_mass
-
-      FoodFarmEnvironment : humidity
-
-      FoodFarmEnvironment : IFSAC_category
-
-      FoodFarmEnvironment : intended_consumer
-
-      FoodFarmEnvironment : lat_lon
-
-      FoodFarmEnvironment : library_prep_kit
-
-      FoodFarmEnvironment : lot_number
-
-      FoodFarmEnvironment : mechanical_damage
-
-      FoodFarmEnvironment : misc_param
-
-      FoodFarmEnvironment : nucl_acid_ext
-
-      FoodFarmEnvironment : organism_count
-
-      FoodFarmEnvironment : part_plant_animal
-
-      FoodFarmEnvironment : perturbation
-
-      FoodFarmEnvironment : ph
-
-      FoodFarmEnvironment : ph_meth
-
-      FoodFarmEnvironment : plant_growth_med
-
-      FoodFarmEnvironment : plant_part_maturity
-
-      FoodFarmEnvironment : plant_reprod_crop
-
-          FoodFarmEnvironment --|&gt; PLANT_REPROD_CROP_ENUM : plant_reprod_crop
-
-      FoodFarmEnvironment : plant_water_method
-
-      FoodFarmEnvironment : previous_land_use
-
-      FoodFarmEnvironment : prod_label_claims
-
-      FoodFarmEnvironment : project_name
-
-      FoodFarmEnvironment : rel_location
-
-      FoodFarmEnvironment : repository_name
-
-      FoodFarmEnvironment : root_cond
-
-      FoodFarmEnvironment : root_med_carbon
-
-      FoodFarmEnvironment : root_med_macronutr
-
-      FoodFarmEnvironment : root_med_micronutr
-
-      FoodFarmEnvironment : root_med_ph
-
-      FoodFarmEnvironment : salinity
-
-      FoodFarmEnvironment : samp_collect_device
-
-      FoodFarmEnvironment : samp_name
-
-      FoodFarmEnvironment : samp_pooling
-
-      FoodFarmEnvironment : samp_purpose
-
-      FoodFarmEnvironment : samp_size
-
-      FoodFarmEnvironment : samp_source_mat_cat
-
-      FoodFarmEnvironment : samp_store_dur
-
-      FoodFarmEnvironment : samp_store_temp
-
-      FoodFarmEnvironment : samp_type
-
-      FoodFarmEnvironment : samp_vol_we_dna_ext
-
-      FoodFarmEnvironment : season
-
-      FoodFarmEnvironment : season_humidity
-
-      FoodFarmEnvironment : season_precpt
-
-      FoodFarmEnvironment : season_temp
-
-      FoodFarmEnvironment : seq_meth
-
-      FoodFarmEnvironment : sequencing_kit
-
-      FoodFarmEnvironment : sequencing_location
-
-      FoodFarmEnvironment : serovar_or_serotype
-
-      FoodFarmEnvironment : size_frac_low
-
-      FoodFarmEnvironment : size_frac_up
-
-      FoodFarmEnvironment : soil_conductivity
-
-      FoodFarmEnvironment : soil_cover
-
-      FoodFarmEnvironment : soil_pH
-
-      FoodFarmEnvironment : soil_porosity
-
-      FoodFarmEnvironment : soil_temp
-
-      FoodFarmEnvironment : soil_texture_class
-
-          FoodFarmEnvironment --|&gt; SOIL_TEXTURE_CLASS_ENUM : soil_texture_class
-
-      FoodFarmEnvironment : soil_texture_meth
-
-      FoodFarmEnvironment : soil_type
-
-      FoodFarmEnvironment : soil_type_meth
-
-      FoodFarmEnvironment : solar_irradiance
-
-      FoodFarmEnvironment : spikein_antibiotic
-
-      FoodFarmEnvironment : spikein_count
-
-      FoodFarmEnvironment : spikein_growth_med
-
-      FoodFarmEnvironment : spikein_metal
-
-      FoodFarmEnvironment : spikein_org
-
-      FoodFarmEnvironment : spikein_serovar
-
-      FoodFarmEnvironment : spikein_strain
-
-      FoodFarmEnvironment : temp
-
-      FoodFarmEnvironment : tillage
-
-          FoodFarmEnvironment --|&gt; TILLAGE_ENUM : tillage
-
-      FoodFarmEnvironment : timepoint
-
-      FoodFarmEnvironment : tot_nitro_cont_meth
-
-      FoodFarmEnvironment : tot_nitro_content
-
-      FoodFarmEnvironment : tot_org_c_meth
-
-      FoodFarmEnvironment : tot_org_carb
-
-      FoodFarmEnvironment : turbidity
-
-      FoodFarmEnvironment : ventilation_rate
-
-      FoodFarmEnvironment : ventilation_type
-
-      FoodFarmEnvironment : water_frequency
-
-      FoodFarmEnvironment : water_pH
-
-      FoodFarmEnvironment : water_source_adjac
-
-      FoodFarmEnvironment : water_source_shared
-
-      FoodFarmEnvironment : wind_direction
-
-      FoodFarmEnvironment : wind_speed
-
-
-</div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Extension/">Extension</a><ul>
-<li><strong>FoodFarmEnvironment</strong></li>
+<li><strong>FoodFarmEnvironment</strong><ul>
+<li><a href="../MigsBaFoodFarmEnvironment/">MigsBaFoodFarmEnvironment</a> [ <a href="../MigsBa/">MigsBa</a>]</li>
+<li><a href="../MigsEuFoodFarmEnvironment/">MigsEuFoodFarmEnvironment</a> [ <a href="../MigsEu/">MigsEu</a>]</li>
+<li><a href="../MigsOrgFoodFarmEnvironment/">MigsOrgFoodFarmEnvironment</a> [ <a href="../MigsOrg/">MigsOrg</a>]</li>
+<li><a href="../MigsPlFoodFarmEnvironment/">MigsPlFoodFarmEnvironment</a> [ <a href="../MigsPl/">MigsPl</a>]</li>
+<li><a href="../MigsViFoodFarmEnvironment/">MigsViFoodFarmEnvironment</a> [ <a href="../MigsVi/">MigsVi</a>]</li>
+<li><a href="../MimagFoodFarmEnvironment/">MimagFoodFarmEnvironment</a> [ <a href="../Mimag/">Mimag</a>]</li>
+<li><a href="../MimarksCFoodFarmEnvironment/">MimarksCFoodFarmEnvironment</a> [ <a href="../MimarksC/">MimarksC</a>]</li>
+<li><a href="../MimarksSFoodFarmEnvironment/">MimarksSFoodFarmEnvironment</a> [ <a href="../MimarksS/">MimarksS</a>]</li>
+<li><a href="../MimsFoodFarmEnvironment/">MimsFoodFarmEnvironment</a> [ <a href="../Mims/">Mims</a>]</li>
+<li><a href="../MisagFoodFarmEnvironment/">MisagFoodFarmEnvironment</a> [ <a href="../Misag/">Misag</a>]</li>
+<li><a href="../MiuvigFoodFarmEnvironment/">MiuvigFoodFarmEnvironment</a> [ <a href="../Miuvig/">Miuvig</a>]</li>
 </ul>
 </li>
 </ul>
-<h2 id="slots">Slots</h2>
+</li>
+</ul>
+<h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
@@ -1370,29 +1229,12 @@
 <ul>
 <li>from schema: https://w3id.org/mixs-6-2-rc</li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>MIXS:0016020</td>
-</tr>
-<tr>
-<td>native</td>
-<td>mixs_6_2_rc:FoodFarmEnvironment</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+
 <h3 id="direct">Direct</h3>
 <details>
+
 <pre><code class="language-yaml">name: FoodFarmEnvironment
 description: food-farm environment extension
 title: food-farm environment
@@ -2236,9 +2078,12 @@ slot_usage:
 class_uri: MIXS:0016020
 
 </code></pre>
+
 </details>
+
 <h3 id="induced">Induced</h3>
 <details>
+
 <pre><code class="language-yaml">name: FoodFarmEnvironment
 description: food-farm environment extension
 title: food-farm environment
@@ -2958,7 +2803,6 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - sample
     slot_uri: MIXS:0001107
@@ -3010,7 +2854,6 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - project
     slot_uri: MIXS:0000092
@@ -3067,7 +2910,6 @@ attributes:
     in_subset:
     - environment
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - geographic
     - location
@@ -3111,7 +2953,6 @@ attributes:
     in_subset:
     - environment
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - geographic
     - location
@@ -3155,7 +2996,6 @@ attributes:
     in_subset:
     - environment
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - date
     slot_uri: MIXS:0000011
@@ -3191,7 +3031,6 @@ attributes:
     in_subset:
     - sequencing
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - method
     slot_uri: MIXS:0000050
@@ -3228,7 +3067,6 @@ attributes:
       sample collected
     title: amount or size of sample collected
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000001
     multivalued: false
     alias: samp_size
@@ -3268,7 +3106,6 @@ attributes:
     examples:
     - value: swab, biopsy, niskin bottle, push core, drag swab [GENEPIO:0002713]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000002
     multivalued: false
@@ -3301,7 +3138,6 @@ attributes:
       the nucleic acid fraction from a sample
     title: nucleic acid extraction
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000037
     multivalued: false
     alias: nucl_acid_ext
@@ -3338,7 +3174,6 @@ attributes:
     examples:
     - value: 30% relative humidity
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000100
     multivalued: false
     alias: humidity
@@ -3366,7 +3201,6 @@ attributes:
     examples:
     - value: total prokaryotes;3.5e7 colony forming units per milliliter;qPCR
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{float} {unit};[ATP|MPN|qPCR|other]'
     slot_uri: MIXS:0000103
     multivalued: true
@@ -3416,7 +3250,6 @@ attributes:
     examples:
     - value: total prokaryotes;3.5e7 colony forming units per milliliter;qPCR
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     - organism
@@ -3444,7 +3277,6 @@ attributes:
     examples:
     - value: -80 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - sample
     - storage
@@ -3497,7 +3329,6 @@ attributes:
     examples:
     - value: 1.36 kilowatts per square meter per day
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000112
     multivalued: true
     alias: solar_irradiance
@@ -3526,7 +3357,6 @@ attributes:
     examples:
     - value: 750 cubic meter per minute
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - rate
     slot_uri: MIXS:0000114
@@ -3551,7 +3381,6 @@ attributes:
       which the sample was stored written in ISO 8601 format
     title: sample storage duration
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000116
     multivalued: false
     alias: samp_store_dur
@@ -3593,7 +3422,6 @@ attributes:
     examples:
     - value: 1.6 kilometers per hour
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000118
     multivalued: false
     alias: wind_speed
@@ -3626,7 +3454,6 @@ attributes:
     examples:
     - value: 25 practical salinity unit
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - salinity
     slot_uri: MIXS:0000183
@@ -3667,7 +3494,6 @@ attributes:
       Sample Size (MIXS:0000001)'
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000111
     multivalued: false
     alias: samp_vol_we_dna_ext
@@ -3720,7 +3546,6 @@ attributes:
     description: Previous land use and dates
     title: history/previous land use
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{timestamp}'
     slot_uri: MIXS:0000315
     multivalued: false
@@ -3738,7 +3563,6 @@ attributes:
     description: Whether or not crop is rotated, and if yes, rotation schedule
     title: history/crop rotation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{boolean};{Rn/start_time/end_time/duration}'
     slot_uri: MIXS:0000318
     multivalued: false
@@ -3757,7 +3581,6 @@ attributes:
       lower-level classification
     title: soil type method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000334
     multivalued: false
     alias: soil_type_meth
@@ -3779,7 +3602,6 @@ attributes:
     description: Reference or method used in determining total organic carbon
     title: total organic carbon method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000337
     multivalued: false
     alias: tot_org_c_meth
@@ -3801,7 +3623,6 @@ attributes:
     description: Reference or method used in determining the total nitrogen
     title: total nitrogen content method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000338
     multivalued: false
     alias: tot_nitro_cont_meth
@@ -3826,7 +3647,6 @@ attributes:
     examples:
     - value: 10 days
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000255
     multivalued: false
     alias: host_age
@@ -3862,7 +3682,6 @@ attributes:
     examples:
     - value: 500 gram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - dry
     - host
@@ -3894,7 +3713,6 @@ attributes:
     examples:
     - value: 1 meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000264
     multivalued: false
     alias: host_height
@@ -3924,7 +3742,6 @@ attributes:
     description: The length of subject
     title: host length
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000256
     multivalued: false
     alias: host_length
@@ -3951,7 +3768,6 @@ attributes:
     examples:
     - value: 2500 gram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000263
     multivalued: false
     alias: host_tot_mass
@@ -3990,7 +3806,6 @@ attributes:
     examples:
     - value: sucrose
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - carbon
     string_serialization: '{text};{float} {unit}'
@@ -4020,7 +3835,6 @@ attributes:
     examples:
     - value: KH2PO4;170  milligram per liter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - macronutrients
     string_serialization: '{text};{float} {unit}'
@@ -4050,7 +3864,6 @@ attributes:
     examples:
     - value: H3BO3;6.2  milligram per liter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - micronutrients
     string_serialization: '{text};{float} {unit}'
@@ -4073,7 +3886,6 @@ attributes:
     examples:
     - value: 10 meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000018
     multivalued: false
     alias: depth
@@ -4120,7 +3932,6 @@ attributes:
     examples:
     - value: 18 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - mean
     - season
@@ -4148,7 +3959,6 @@ attributes:
       equivalent value derived by such methods as regional indexes or Isohyetal maps
     title: mean seasonal precipitation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000645
     multivalued: false
     alias: season_precpt
@@ -4171,7 +3981,6 @@ attributes:
     description: Total organic carbon content
     title: total organic carbon
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000533
     multivalued: false
     alias: tot_org_carb
@@ -4196,7 +4005,6 @@ attributes:
     description: Total nitrogen content of the sample
     title: total nitrogen content
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000530
     multivalued: false
     alias: tot_nitro_content
@@ -4227,7 +4035,6 @@ attributes:
     examples:
     - value: 10 milliSiemens per centimeter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000692
     multivalued: false
     alias: conduc
@@ -4250,7 +4057,6 @@ attributes:
       individual particles
     title: turbidity
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000191
     multivalued: false
     alias: turbidity
@@ -4281,7 +4087,6 @@ attributes:
     examples:
     - value: 0.2 micrometer
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - lower
     slot_uri: MIXS:0000735
@@ -4313,7 +4118,6 @@ attributes:
     examples:
     - value: 20 micrometer
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - upper
     slot_uri: MIXS:0000736
@@ -4338,7 +4142,6 @@ attributes:
     description: Temperature of the sample at the time of sampling
     title: temperature
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000113
     multivalued: false
     alias: temp
@@ -4390,7 +4193,6 @@ attributes:
     description: Ventilation system used in the sampled premises
     title: ventilation type
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0000756
     multivalued: true
@@ -4410,7 +4212,6 @@ attributes:
     examples:
     - value: 0 degrees; Northwest
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000757
     multivalued: false
     alias: wind_direction
@@ -4435,7 +4236,6 @@ attributes:
     examples:
     - value: aox1A transgenic
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{PMID}|{DOI}|{URL}'
     slot_uri: MIXS:0000859
     multivalued: false
@@ -4459,7 +4259,6 @@ attributes:
     examples:
     - value: seed pod; green [PATO:0000320]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000874
     multivalued: false
@@ -4485,7 +4284,6 @@ attributes:
       phase of the fluid
     title: pH
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001001
     multivalued: false
     alias: ph
@@ -4512,7 +4310,6 @@ attributes:
     examples:
     - value: A/3*B
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000247
     multivalued: false
     alias: ances_data
@@ -4531,7 +4328,6 @@ attributes:
       as bacteria, viruses or fungi
     title: biotic regimen
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001038
     multivalued: true
     alias: biotic_regm
@@ -4549,7 +4345,6 @@ attributes:
       (chebi) (v 163), http://purl.bioontology.org/ontology/chebi
     title: chemical administration
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}];{timestamp}'
     slot_uri: MIXS:0000751
     multivalued: true
@@ -4581,7 +4376,6 @@ attributes:
     examples:
     - value: spreading
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - growth
     slot_uri: MIXS:0001044
@@ -4604,7 +4398,6 @@ attributes:
     examples:
     - value: downy mildew
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
     multivalued: false
@@ -4633,7 +4426,6 @@ attributes:
     examples:
     - value: Ts
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000365
     multivalued: false
     alias: host_genotype
@@ -4659,7 +4451,6 @@ attributes:
     examples:
     - value: '4530'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{NCBI taxid}'
     slot_uri: MIXS:0000250
     multivalued: false
@@ -4686,7 +4477,6 @@ attributes:
     examples:
     - value: pruning;bark
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{text}'
     slot_uri: MIXS:0001052
     multivalued: true
@@ -4706,7 +4496,6 @@ attributes:
       of the entire perturbation period; can include multiple perturbation types
     title: perturbation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{Rn/start_time/end_time/duration}'
     slot_uri: MIXS:0000754
     multivalued: true
@@ -4742,7 +4531,6 @@ attributes:
     examples:
     - value: http://himedialabs.com/TD/PT158.pdf
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - condition
     slot_uri: MIXS:0001061
@@ -4767,7 +4555,6 @@ attributes:
     examples:
     - value: '7.5'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - ph
     slot_uri: MIXS:0001062
@@ -4786,7 +4573,6 @@ attributes:
     description: Note method(s) used for tilling
     title: history/tillage
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001081
     multivalued: true
     alias: tillage
@@ -4803,7 +4589,6 @@ attributes:
     description: Reference or method used in determining pH
     title: pH method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001106
     multivalued: false
     alias: ph_meth
@@ -4829,7 +4614,6 @@ attributes:
     examples:
     - value: LB broth
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - growth
     slot_uri: MIXS:0001108
@@ -4858,7 +4642,6 @@ attributes:
     examples:
     - value: autumn [NCIT:C94733]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - season
     string_serialization: '{termLabel} [{termID}]'
@@ -4887,7 +4670,6 @@ attributes:
     examples:
     - value: shrimp (peeled, deep-frozen) [FOODON:03317171]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001184
     multivalued: false
@@ -4913,7 +4695,6 @@ attributes:
     examples:
     - value: built environment sample [GENEPIO:0001248]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - sample
     - type
@@ -4942,7 +4723,6 @@ attributes:
     - value: well
       description: was water well (ENVO:01000002)
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - farm
     - source
@@ -4964,7 +4744,6 @@ attributes:
     examples:
     - value: drip irrigation process [AGRO:00000056]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - delivery
     - method
@@ -4991,7 +4770,6 @@ attributes:
       report multiple PM's by entering numeric values preceded by name of PM
     title: air particulate matter concentration
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000108
     multivalued: true
@@ -5016,7 +4794,6 @@ attributes:
     examples:
     - value: self feeding [EOL:0001645]| straight feed trough [EOL:0001661]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - animal
     - equipment
@@ -5043,7 +4820,6 @@ attributes:
     examples:
     - value: Thripidae [NCBITaxon:45053]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - animal
     - sample
@@ -5071,7 +4847,6 @@ attributes:
     examples:
     - value: water trough [EOL:0001618]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - animal
     - delivery
@@ -5103,7 +4878,6 @@ attributes:
     examples:
     - value: 570 kilogram per metre square
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - crop
     slot_uri: MIXS:0001116
@@ -5130,7 +4904,6 @@ attributes:
     examples:
     - value: positive
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - culture
     slot_uri: MIXS:0001117
@@ -5152,7 +4925,6 @@ attributes:
     examples:
     - value: Listeria monocytogenes [NCIT:C86502]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - culture
     - organism
@@ -5186,7 +4958,6 @@ attributes:
     examples:
     - value: Listeria monocytogenes [NCIT:C86502]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - culture
     - microbial
@@ -5217,7 +4988,6 @@ attributes:
     examples:
     - value: ripe or mature [FOODON:03530052]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - degree
     - plant
@@ -5245,7 +5015,6 @@ attributes:
     examples:
     - value: estuarine biome [ENVO:01000020]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - adjacent
     - environment
@@ -5275,7 +5044,6 @@ attributes:
     examples:
     - value: feedlot [ENVO:01000627]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - adjacent
     - environmental
@@ -5301,7 +5069,6 @@ attributes:
     examples:
     - value: combine harvester [AGRO:00000473]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - equipment
     - farm
@@ -5337,7 +5104,6 @@ attributes:
     examples:
     - value: hot water pressure wash, hypochlorite solution, 50 parts per million
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - equipment
     - farm
@@ -5360,7 +5126,6 @@ attributes:
     examples:
     - value: Biweekly
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - equipment
     - farm
@@ -5384,7 +5149,6 @@ attributes:
     examples:
     - value: combine harvester [AGRO:00000473]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - equipment
     - farm
@@ -5415,7 +5179,6 @@ attributes:
     examples:
     - value: fish emulsion [AGRO:00000082]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - administration
     slot_uri: MIXS:0001127
@@ -5442,7 +5205,6 @@ attributes:
     examples:
     - value: '2018-05-11T10:00:00+01:00'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - administration
     - date
@@ -5463,7 +5225,6 @@ attributes:
     examples:
     - value: '80'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - animal
     - food
@@ -5496,7 +5257,6 @@ attributes:
     examples:
     - value: Hay [FOODON:03301763]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - animal
     - diet
@@ -5520,7 +5280,6 @@ attributes:
       under food contact surface (http://purl.obolibrary.org/obo/FOODON_03500010)
     title: food contact surface
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001131
     multivalued: true
@@ -5548,7 +5307,6 @@ attributes:
     examples:
     - value: Plastic shrink-pack [FOODON:03490137]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     string_serialization: '{text}|{termLabel} [{termID}]'
@@ -5574,7 +5332,6 @@ attributes:
     examples:
     - value: hand-picked
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     - process
@@ -5602,7 +5359,6 @@ attributes:
     examples:
     - value: vacuum-packed [FOODON:03480027]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001134
     multivalued: true
@@ -5629,7 +5385,6 @@ attributes:
     examples:
     - value: food slow freezing [FOODON:03470128]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     - process
@@ -5654,7 +5409,6 @@ attributes:
     examples:
     - value: wild caught
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     - production
@@ -5672,12 +5426,11 @@ attributes:
     name: prod_label_claims
     description: Labeling claims containing descriptors such as wild caught, free-range,
       organic, free-range, industrial, hormone-free, antibiotic free, cage free. Can
-      include more than one term, separated by ";"
+      include more than one term, separated by &quot;;&quot;
     title: production labeling claims
     examples:
     - value: free range
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - production
     slot_uri: MIXS:prod_label_claims
@@ -5701,7 +5454,6 @@ attributes:
     examples:
     - value: train travel [GENEPIO:0001060]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     - method
@@ -5739,7 +5491,6 @@ attributes:
     examples:
     - value: aircraft [ENVO:01001488]|car [ENVO:01000605]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     - transport
@@ -5765,7 +5516,6 @@ attributes:
     examples:
     - value: giant tiger prawn [FOODON:03412612]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0001139
     multivalued: false
@@ -5795,7 +5545,6 @@ attributes:
     examples:
     - value: gluten removal process [FOODON:03460750]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     - process
@@ -5821,7 +5570,6 @@ attributes:
     examples:
     - value: hail
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - event
     - extreme
@@ -5843,7 +5591,6 @@ attributes:
     examples:
     - value: '2013-03-25T12:42:31+01:00'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - date
     - extreme
@@ -5873,7 +5620,6 @@ attributes:
     examples:
     - value: 'serovar:Newport, variety:glabrum, cultivar: Red Delicious'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - host
     - host.
@@ -5898,7 +5644,6 @@ attributes:
       (http://purl.obolibrary.org/obo/FOODON_03510136) or NCBI taxid
     title: intended consumer
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{integer}|{termLabel} [{termID}]'
     slot_uri: MIXS:0001144
     multivalued: true
@@ -5921,7 +5666,6 @@ attributes:
     examples:
     - value: Illumina DNA Prep
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0001145
     multivalued: false
@@ -5948,7 +5692,6 @@ attributes:
     examples:
     - value: obstructed;hay bales; 2 m
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - air
     string_serialization: '[obstructed|unobstructed]; {text}; {measurement value}'
@@ -5976,7 +5719,6 @@ attributes:
     examples:
     - value: 1239ABC01A, split Cornish hens
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - number
     string_serialization: '{integer}, {text}'
@@ -6002,7 +5744,6 @@ attributes:
     examples:
     - value: '0.25'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - humidity
     - mean
@@ -6035,7 +5776,6 @@ attributes:
     examples:
     - value: chuck [FOODON:03530021]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - animal
     - plant
@@ -6063,7 +5803,6 @@ attributes:
     examples:
     - value: soil
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}] or [husk|other artificial liquid
       medium|other artificial solid medium|peat moss|perlite|pumice|sand|soil|vermiculite|water]'
     slot_uri: MIXS:0001057
@@ -6085,7 +5824,6 @@ attributes:
     examples:
     - value: seedling
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - plant
     slot_uri: MIXS:0001150
@@ -6102,7 +5840,6 @@ attributes:
     description: The reason that the sample was collected
     title: purpose of sampling
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '[active surveillance in response to an outbreak|active
       surveillance not initiated by an outbreak|clinical trial|cluster investigation|environmental
       assessment|farm sample|field trial|for cause|industry internal investigation|market
@@ -6127,13 +5864,12 @@ attributes:
         tag: Expected_value
         value: Institution
     description: The name of the institution where the sample or DNA extract is held
-      or "sample not available" if the sample was used in its entirety for analysis
+      or &quot;sample not available&quot; if the sample was used in its entirety for analysis
       or otherwise not retained
     title: repository name
     examples:
     - value: FDA CFSAN Microbiology Laboratories
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0001152
     multivalued: true
@@ -6154,7 +5890,6 @@ attributes:
       cells. Please provide a short description of the samples that were pooled
     title: sample pooling
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001153
     multivalued: true
     alias: samp_pooling
@@ -6176,7 +5911,6 @@ attributes:
       or http://purl.obolibrary.org/obo/OBI_0100051)
     title: sample source material category
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0001154
     multivalued: false
@@ -6205,7 +5939,6 @@ attributes:
     examples:
     - value: NextSeq 500/550 High Output Kit v2.5 (75 Cycles)
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - kit
     string_serialization: '{text}'
@@ -6229,7 +5962,6 @@ attributes:
     examples:
     - value: University of Maryland Genomics Resource Center
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - location
     slot_uri: MIXS:0001156
@@ -6255,7 +5987,6 @@ attributes:
     examples:
     - value: Escherichia coli strain O157:H7 [NCIT:C86883]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001157
     multivalued: true
     alias: serovar_or_serotype
@@ -6277,7 +6008,6 @@ attributes:
     description: Conductivity of soil at time of sampling.
     title: soil conductivity
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001158
     multivalued: false
     alias: soil_conductivity
@@ -6300,7 +6030,6 @@ attributes:
       ENVO:00010483, environmental material
     title: soil cover
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: bare soil [ENVO:01001616]
     slot_uri: MIXS:0001159
     multivalued: false
@@ -6317,7 +6046,6 @@ attributes:
     description: The pH of soil at time of sampling.
     title: soil pH
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001160
     alias: soil_pH
     owner: FoodFarmEnvironment
@@ -6333,7 +6061,6 @@ attributes:
       plant, near irrigation ditch, from the dirt road
     title: relative location of sample
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001161
     multivalued: false
     alias: rel_location
@@ -6359,7 +6086,6 @@ attributes:
     examples:
     - value: '0.2'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - porosity
     - sediment
@@ -6379,7 +6105,6 @@ attributes:
     description: Temperature of soil at the time of sampling
     title: soil temperature
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001163
     multivalued: false
     alias: soil_temp
@@ -6405,7 +6130,6 @@ attributes:
     examples:
     - value: silty clay loam
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - classification
     - soil
@@ -6426,7 +6150,6 @@ attributes:
     examples:
     - value: https://uwlab.soils.wisc.edu/wp-content/uploads/sites/17/2015/09/particle_size.pdf
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - method
     - soil
@@ -6454,7 +6177,6 @@ attributes:
       can be separated by pipes
     title: soil type
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000332
     multivalued: false
@@ -6477,7 +6199,6 @@ attributes:
     examples:
     - value: Listeria monocytogenes [NCIT:C86502]|28901
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - organism
     - spike
@@ -6511,7 +6232,6 @@ attributes:
     examples:
     - value: Escherichia coli strain O157:H7 [NCIT:C86883]|83334
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - spike
     string_serialization: '{termLabel} [{termID}]|{integer}'
@@ -6541,7 +6261,6 @@ attributes:
     examples:
     - value: LB broth [MCO:0000036]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - growth
     - spike
@@ -6575,7 +6294,6 @@ attributes:
     examples:
     - value: '169963'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - microbial
     - spike
@@ -6605,7 +6323,6 @@ attributes:
     examples:
     - value: Tetracycline at 5 mg/ml
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - spike
     string_serialization: '{text} {integer}'
@@ -6633,7 +6350,6 @@ attributes:
     examples:
     - value: Cd at 20 ppm
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - heavy
     - spike
@@ -6662,7 +6378,6 @@ attributes:
     examples:
     - value: PT24H
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - time
     slot_uri: MIXS:0001173
@@ -6696,7 +6411,6 @@ attributes:
     examples:
     - value: 2 per day
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - delivery
     - frequency
@@ -6717,7 +6431,6 @@ attributes:
       phase of the fluid.
     title: water pH
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001175
     multivalued: false
     alias: water_pH
@@ -6740,7 +6453,6 @@ attributes:
     examples:
     - value: no sharing
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - source
     - water
@@ -6762,7 +6474,6 @@ attributes:
       PubMed or DOI reference for published protocols
     title: enrichment protocol
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001177
     multivalued: false
     alias: enrichment_protocol
@@ -6790,12 +6501,11 @@ attributes:
     description: The date recommended for the use of the product while at peak quality,
       this date is not a reflection of safety unless used on infant formula this date
       is not a reflection of safety and is typically labeled on a food product as
-      "best if used by," best by," "use by," or "freeze by."
+      &quot;best if used by,&quot; best by,&quot; &quot;use by,&quot; or &quot;freeze by.&quot;
     title: food quality date
     examples:
     - value: best by 2020-05-24
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - date
     - food
@@ -6835,7 +6545,6 @@ attributes:
     examples:
     - value: Plants:Produce:Vegetables:Herbs:Dried Herbs
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     string_serialization: '{text}'
@@ -6858,7 +6567,6 @@ attributes:
     examples:
     - value: pen rearing system [EOL:0001636]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - animal
     slot_uri: MIXS:0001180
@@ -6885,7 +6593,6 @@ attributes:
     examples:
     - value: '2018-05-11T10:00:00+01:00'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - culture
     - date
@@ -6914,7 +6621,6 @@ attributes:
     - value: scrubbed with brush
       description: was rinsed with water|scrubbed with brush
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - food
     - process
@@ -6938,7 +6644,6 @@ attributes:
     examples:
     - value: Bicarbonate ion concentration;2075 micromole per kilogram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - parameter
     string_serialization: '{text};{float} {unit}'
@@ -6975,31 +6680,57 @@ attributes:
 class_uri: MIXS:0016020
 
 </code></pre>
+
 </details>
-</article>
-</div>
-<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-</div>
-</main>
-<footer class="md-footer">
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-copyright">
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
     </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<div class="md-dialog" data-md-component="dialog">
-<div class="md-dialog__inner md-typeset"></div>
-</div>
-<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
-<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
 </html>

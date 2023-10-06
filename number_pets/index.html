@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: number_pets - mixs-6-2-for-merge</title>
+        <title>Term: number_pets - mixs-6-2-for-merge</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-number_pets" class="md-skip">
+        <a href="#term-number_pets" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: number_pets
+              Term: number_pets
             
           </span>
         </div>
@@ -231,11 +231,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../term_list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    About
+    Full term table
   </span>
   
 
@@ -269,13 +269,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    Applicable Classes
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
@@ -329,32 +322,18 @@
   
 
 
-<h1 id="slot-number_pets">Slot: number_pets</h1>
+<h1 id="term-number_pets">Term: number_pets</h1>
 <p><em>The number of pets residing in the sampled space</em></p>
 <p>URI: <a href="https://w3id.org/mixs/0000231">MIXS:0000231</a></p>
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-classes">Applicable Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Modifies Slot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../BuiltEnvironment/">BuiltEnvironment</a></td>
-<td>built environment extension</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
 <p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Structured pattern: <code>^{integer} {text}$</code></p>
 </li>
 <li>
 <p>Regex pattern: <code>^[1-9][0-9]* ([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
@@ -372,7 +351,6 @@
 description: The number of pets residing in the sampled space
 title: number of pets
 from_schema: https://w3id.org/mixs-6-2-rc
-rank: 1000
 keywords:
 - number
 slot_uri: MIXS:0000231
@@ -436,6 +414,10 @@ structured_pattern:
     
     
       <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
       
     
   </body>

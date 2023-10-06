@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: chimera_check - mixs-6-2-for-merge</title>
+        <title>Term: chimera_check - mixs-6-2-for-merge</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-chimera_check" class="md-skip">
+        <a href="#term-chimera_check" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: chimera_check
+              Term: chimera_check
             
           </span>
         </div>
@@ -231,11 +231,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../term_list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    About
+    Full term table
   </span>
   
 
@@ -269,13 +269,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    Applicable Classes
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
@@ -336,77 +329,18 @@
   
 
 
-<h1 id="slot-chimera_check">Slot: chimera_check</h1>
+<h1 id="term-chimera_check">Term: chimera_check</h1>
 <p><em>Tool(s) used for chimera checking, including version number and parameters, to discover and remove chimeric sequences. A chimeric sequence is comprised of two or more phylogenetically distinct parent sequences</em></p>
 <p>URI: <a href="https://w3id.org/mixs/0000052">MIXS:0000052</a></p>
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-classes">Applicable Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Modifies Slot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../MimarksC/">MimarksC</a></td>
-<td>Minimal Information about a Marker Specimen: specimen</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../MimarksS/">MimarksS</a></td>
-<td>Minimal Information about a Marker Specimen: survey</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../Agriculture/">Agriculture</a></td>
-<td>agriculture extension</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../MimarksSPlantAssociated/">MimarksSPlantAssociated</a></td>
-<td>MIxS data that complies with the MimarksS checklist and the PlantAssociated E...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MimarksSHostAssociated/">MimarksSHostAssociated</a></td>
-<td>MIxS data that complies with the MimarksS checklist and the HostAssociated Ex...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MimarksSHumanAssociated/">MimarksSHumanAssociated</a></td>
-<td>MIxS data that complies with the MimarksS checklist and the HumanAssociated E...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MimarksSHumanGut/">MimarksSHumanGut</a></td>
-<td>MIxS data that complies with the MimarksS checklist and the HumanGut Extensio...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MimarksSHumanOral/">MimarksSHumanOral</a></td>
-<td>MIxS data that complies with the MimarksS checklist and the HumanOral Extensi...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MimarksSSoil/">MimarksSSoil</a></td>
-<td>MIxS data that complies with the MimarksS checklist and the Soil Extension</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../MimarksSWater/">MimarksSWater</a></td>
-<td>MIxS data that complies with the MimarksS checklist and the Water Extension</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
 <p>Range: <a href="../String/">String</a></p>
+</li>
+<li>
+<p>Structured pattern: <code>^{software};{version};{parameters}$</code></p>
 </li>
 <li>
 <p>Regex pattern: <code>^([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+);([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
@@ -443,7 +377,6 @@ examples:
 in_subset:
 - sequencing
 from_schema: https://w3id.org/mixs-6-2-rc
-rank: 1000
 keywords:
 - software
 slot_uri: MIXS:0000052
@@ -507,6 +440,10 @@ structured_pattern:
     
     
       <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
       
     
   </body>

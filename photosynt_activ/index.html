@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: photosynt_activ - mixs-6-2-for-merge</title>
+        <title>Term: photosynt_activ - mixs-6-2-for-merge</title>
       
     
     
@@ -63,7 +63,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-photosynt_activ" class="md-skip">
+        <a href="#term-photosynt_activ" class="md-skip">
           Skip to content
         </a>
       
@@ -99,7 +99,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: photosynt_activ
+              Term: photosynt_activ
             
           </span>
         </div>
@@ -231,11 +231,11 @@
   
   
     <li class="md-nav__item">
-      <a href="../about/" class="md-nav__link">
+      <a href="../term_list/" class="md-nav__link">
         
   
   <span class="md-ellipsis">
-    About
+    Full term table
   </span>
   
 
@@ -269,13 +269,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    Applicable Classes
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#properties" class="md-nav__link">
@@ -343,28 +336,11 @@
   
 
 
-<h1 id="slot-photosynt_activ">Slot: photosynt_activ</h1>
+<h1 id="term-photosynt_activ">Term: photosynt_activ</h1>
 <p><em>Measurement of photosythetic activity (i.e. leaf gas exchange / chlorophyll fluorescence emissions / reflectance / transpiration) Please also include the term method term detailing the method of activity measurement</em></p>
 <p>URI: <a href="https://w3id.org/mixs/0001296">MIXS:0001296</a></p>
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-classes">Applicable Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Modifies Slot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../Agriculture/">Agriculture</a></td>
-<td>agriculture extension</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
@@ -372,6 +348,9 @@
 </li>
 <li>
 <p>Recommended: True</p>
+</li>
+<li>
+<p>Structured pattern: <code>^{scientific_float}( *- *{scientific_float})? *{text}$</code></p>
 </li>
 <li>
 <p>Regex pattern: <code>^[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?( *- *[-+]?[0-9]*\.?[0-9]+(?:[eE][-+]?[0-9]+)?)? *([^\s-]{1,2}|[^\s-]+.+[^\s-]+)$</code></p>
@@ -427,7 +406,6 @@ examples:
   description: added a magnitude to the example from the XLSX file, &quot; mol CO2 m-2
     s-1&quot;
 from_schema: https://w3id.org/mixs-6-2-rc
-rank: 1000
 slot_uri: MIXS:0001296
 alias: photosynt_activ
 domain_of:
@@ -488,6 +466,10 @@ structured_pattern:
     
     
       <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
       
     
   </body>

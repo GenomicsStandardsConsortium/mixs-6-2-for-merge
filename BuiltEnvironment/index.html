@@ -1,704 +1,377 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/BuiltEnvironment/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
+    
+    
+      
+        <title>Class: BuiltEnvironment - mixs-6-2-for-merge</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.79e020e9.min.css">
+      
+      
 
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/BuiltEnvironment/" rel="canonical"/>
-<link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.5.3, mkdocs-material-9.4.3" name="generator"/>
-<title>Class: BuiltEnvironment - mixs-6-2-for-merge</title>
-<link href="../assets/stylesheets/main.79e020e9.min.css" rel="stylesheet"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
-<body dir="ltr">
-<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#class-builtenvironment">
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-builtenvironment" class="md-skip">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
 <header class="md-header md-header--shadow" data-md-component="header">
-<nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="mixs-6-2-for-merge" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-6-2-for-merge">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-</a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
-</label>
-<div class="md-header__title" data-md-component="header-title">
-<div class="md-header__ellipsis">
-<div class="md-header__topic">
-<span class="md-ellipsis">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="mixs-6-2-for-merge" class="md-header__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             mixs-6-2-for-merge
           </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Class: BuiltEnvironment
             
           </span>
-</div>
-</div>
-</div>
-<label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-</label>
-<div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
-<label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
-</label>
-<nav aria-label="Search" class="md-search__options">
-<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
-</button>
-</nav>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="search-result">
-<div class="md-search-result__meta">
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
             Initializing search
           </div>
-<ol class="md-search-result__list" role="presentation"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="md-header__source">
-<a class="md-source" data-md-component="source" href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-</nav>
+      </div>
+    
+  </nav>
+  
 </header>
-<div class="md-container" data-md-component="container">
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="mixs-6-2-for-merge" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-6-2-for-merge">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-</a>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="mixs-6-2-for-merge" class="md-nav__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
     mixs-6-2-for-merge
   </label>
-<div class="md-nav__source">
-<a class="md-source" data-md-component="source" href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="..">
-<span class="md-ellipsis">
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
     Index
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../about/">
-<span class="md-ellipsis">
-    About
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../term_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Full term table
   </span>
-</a>
-</li>
-</ul>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
     Inheritance
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-    Slots
+      
+        <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
     Identifier and Mapping Information
   </a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
     Schema Source
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-    Mappings
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
     LinkML Source
   </a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
+  
+    <nav class="md-nav" aria-label="LinkML Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct" class="md-nav__link">
     Direct
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
+        
+          <li class="md-nav__item">
+  <a href="#induced" class="md-nav__link">
     Induced
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset">
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
 <h1 id="class-builtenvironment">Class: BuiltEnvironment</h1>
 <p><em>built environment extension</em></p>
-<p>URI: <a href="https://w3id.org/mixs/0016001">MIXS:0016001</a></p>
-<div class="mermaid"> classDiagram
-    class BuiltEnvironment
-      Extension &lt;|-- BuiltEnvironment
-
-      BuiltEnvironment : abs_air_humidity
-
-      BuiltEnvironment : address
-
-      BuiltEnvironment : adj_room
-
-      BuiltEnvironment : aero_struc
-
-          BuiltEnvironment --|&gt; AERO_STRUC_ENUM : aero_struc
-
-      BuiltEnvironment : air_temp
-
-      BuiltEnvironment : amount_light
-
-      BuiltEnvironment : arch_struc
-
-          BuiltEnvironment --|&gt; ARCH_STRUC_ENUM : arch_struc
-
-      BuiltEnvironment : avg_dew_point
-
-      BuiltEnvironment : avg_occup
-
-      BuiltEnvironment : avg_temp
-
-      BuiltEnvironment : bathroom_count
-
-      BuiltEnvironment : bedroom_count
-
-      BuiltEnvironment : build_docs
-
-          BuiltEnvironment --|&gt; BUILD_DOCS_ENUM : build_docs
-
-      BuiltEnvironment : build_occup_type
-
-          BuiltEnvironment --|&gt; BUILD_OCCUP_TYPE_ENUM : build_occup_type
-
-      BuiltEnvironment : building_setting
-
-          BuiltEnvironment --|&gt; BUILDING_SETTING_ENUM : building_setting
-
-      BuiltEnvironment : built_struc_age
-
-      BuiltEnvironment : built_struc_set
-
-          BuiltEnvironment --|&gt; BUILT_STRUC_SET_ENUM : built_struc_set
-
-      BuiltEnvironment : built_struc_type
-
-      BuiltEnvironment : carb_dioxide
-
-      BuiltEnvironment : ceil_area
-
-      BuiltEnvironment : ceil_cond
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_3 : ceil_cond
-
-      BuiltEnvironment : ceil_finish_mat
-
-          BuiltEnvironment --|&gt; CEIL_FINISH_MAT_ENUM : ceil_finish_mat
-
-      BuiltEnvironment : ceil_struc
-
-          BuiltEnvironment --|&gt; CEIL_STRUC_ENUM : ceil_struc
-
-      BuiltEnvironment : ceil_texture
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_4 : ceil_texture
-
-      BuiltEnvironment : ceil_thermal_mass
-
-      BuiltEnvironment : ceil_type
-
-          BuiltEnvironment --|&gt; CEIL_TYPE_ENUM : ceil_type
-
-      BuiltEnvironment : ceil_water_mold
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_1 : ceil_water_mold
-
-      BuiltEnvironment : cool_syst_id
-
-      BuiltEnvironment : date_last_rain
-
-      BuiltEnvironment : dew_point
-
-      BuiltEnvironment : door_comp_type
-
-          BuiltEnvironment --|&gt; DOOR_COMP_TYPE_ENUM : door_comp_type
-
-      BuiltEnvironment : door_cond
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_2 : door_cond
-
-      BuiltEnvironment : door_direct
-
-          BuiltEnvironment --|&gt; DOOR_DIRECT_ENUM : door_direct
-
-      BuiltEnvironment : door_loc
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_0 : door_loc
-
-      BuiltEnvironment : door_mat
-
-          BuiltEnvironment --|&gt; DOOR_MAT_ENUM : door_mat
-
-      BuiltEnvironment : door_move
-
-          BuiltEnvironment --|&gt; DOOR_MOVE_ENUM : door_move
-
-      BuiltEnvironment : door_size
-
-      BuiltEnvironment : door_type
-
-          BuiltEnvironment --|&gt; DOOR_TYPE_ENUM : door_type
-
-      BuiltEnvironment : door_type_metal
-
-          BuiltEnvironment --|&gt; DOOR_TYPE_METAL_ENUM : door_type_metal
-
-      BuiltEnvironment : door_type_wood
-
-      BuiltEnvironment : door_water_mold
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_1 : door_water_mold
-
-      BuiltEnvironment : drawings
-
-          BuiltEnvironment --|&gt; DRAWINGS_ENUM : drawings
-
-      BuiltEnvironment : elevator
-
-      BuiltEnvironment : escalator
-
-      BuiltEnvironment : exp_duct
-
-      BuiltEnvironment : exp_pipe
-
-      BuiltEnvironment : ext_door
-
-      BuiltEnvironment : ext_wall_orient
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_0 : ext_wall_orient
-
-      BuiltEnvironment : ext_window_orient
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_0 : ext_window_orient
-
-      BuiltEnvironment : filter_type
-
-          BuiltEnvironment --|&gt; FILTER_TYPE_ENUM : filter_type
-
-      BuiltEnvironment : fireplace_type
-
-          BuiltEnvironment --|&gt; FIREPLACE_TYPE_ENUM : fireplace_type
-
-      BuiltEnvironment : floor_age
-
-      BuiltEnvironment : floor_area
-
-      BuiltEnvironment : floor_cond
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_3 : floor_cond
-
-      BuiltEnvironment : floor_count
-
-      BuiltEnvironment : floor_finish_mat
-
-      BuiltEnvironment : floor_struc
-
-          BuiltEnvironment --|&gt; FLOOR_STRUC_ENUM : floor_struc
-
-      BuiltEnvironment : floor_thermal_mass
-
-      BuiltEnvironment : floor_water_mold
-
-          BuiltEnvironment --|&gt; FLOOR_WATER_MOLD_ENUM : floor_water_mold
-
-      BuiltEnvironment : freq_clean
-
-          BuiltEnvironment --|&gt; FREQ_CLEAN_ENUM : freq_clean
-
-      BuiltEnvironment : freq_cook
-
-      BuiltEnvironment : furniture
-
-          BuiltEnvironment --|&gt; FURNITURE_ENUM : furniture
-
-      BuiltEnvironment : gender_restroom
-
-          BuiltEnvironment --|&gt; GENDER_RESTROOM_ENUM : gender_restroom
-
-      BuiltEnvironment : hall_count
-
-      BuiltEnvironment : handidness
-
-          BuiltEnvironment --|&gt; HANDIDNESS_ENUM : handidness
-
-      BuiltEnvironment : heat_cool_type
-
-          BuiltEnvironment --|&gt; HEAT_COOL_TYPE_ENUM : heat_cool_type
-
-      BuiltEnvironment : heat_deliv_loc
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_0 : heat_deliv_loc
-
-      BuiltEnvironment : heat_sys_deliv_meth
-
-          BuiltEnvironment --|&gt; HEAT_SYS_DELIV_METH_ENUM : heat_sys_deliv_meth
-
-      BuiltEnvironment : heat_system_id
-
-      BuiltEnvironment : height_carper_fiber
-
-      BuiltEnvironment : indoor_space
-
-          BuiltEnvironment --|&gt; INDOOR_SPACE_ENUM : indoor_space
-
-      BuiltEnvironment : indoor_surf
-
-          BuiltEnvironment --|&gt; INDOOR_SURF_ENUM : indoor_surf
-
-      BuiltEnvironment : inside_lux
-
-      BuiltEnvironment : int_wall_cond
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_3 : int_wall_cond
-
-      BuiltEnvironment : last_clean
-
-      BuiltEnvironment : light_type
-
-          BuiltEnvironment --|&gt; LIGHT_TYPE_ENUM : light_type
-
-      BuiltEnvironment : max_occup
-
-      BuiltEnvironment : mech_struc
-
-          BuiltEnvironment --|&gt; MECH_STRUC_ENUM : mech_struc
-
-      BuiltEnvironment : number_pets
-
-      BuiltEnvironment : number_plants
-
-      BuiltEnvironment : number_resident
-
-      BuiltEnvironment : occup_density_samp
-
-      BuiltEnvironment : occup_document
-
-          BuiltEnvironment --|&gt; OCCUP_DOCUMENT_ENUM : occup_document
-
-      BuiltEnvironment : occup_samp
-
-      BuiltEnvironment : organism_count
-
-      BuiltEnvironment : pres_animal_insect
-
-      BuiltEnvironment : project_name
-
-      BuiltEnvironment : quad_pos
-
-          BuiltEnvironment --|&gt; QUAD_POS_ENUM : quad_pos
-
-      BuiltEnvironment : rel_air_humidity
-
-      BuiltEnvironment : rel_humidity_out
-
-      BuiltEnvironment : rel_samp_loc
-
-          BuiltEnvironment --|&gt; REL_SAMP_LOC_ENUM : rel_samp_loc
-
-      BuiltEnvironment : room_air_exch_rate
-
-      BuiltEnvironment : room_architec_elem
-
-      BuiltEnvironment : room_condt
-
-          BuiltEnvironment --|&gt; ROOM_CONDT_ENUM : room_condt
-
-      BuiltEnvironment : room_connected
-
-          BuiltEnvironment --|&gt; ROOM_CONNECTED_ENUM : room_connected
-
-      BuiltEnvironment : room_count
-
-      BuiltEnvironment : room_dim
-
-      BuiltEnvironment : room_door_dist
-
-      BuiltEnvironment : room_door_share
-
-      BuiltEnvironment : room_hallway
-
-      BuiltEnvironment : room_loc
-
-          BuiltEnvironment --|&gt; ROOM_LOC_ENUM : room_loc
-
-      BuiltEnvironment : room_moist_dam_hist
-
-      BuiltEnvironment : room_net_area
-
-      BuiltEnvironment : room_occup
-
-      BuiltEnvironment : room_samp_pos
-
-          BuiltEnvironment --|&gt; ROOM_SAMP_POS_ENUM : room_samp_pos
-
-      BuiltEnvironment : room_type
-
-      BuiltEnvironment : room_vol
-
-      BuiltEnvironment : room_wall_share
-
-      BuiltEnvironment : room_window_count
-
-      BuiltEnvironment : samp_floor
-
-      BuiltEnvironment : samp_name
-
-      BuiltEnvironment : samp_room_id
-
-      BuiltEnvironment : samp_sort_meth
-
-      BuiltEnvironment : samp_time_out
-
-      BuiltEnvironment : samp_weather
-
-          BuiltEnvironment --|&gt; SAMP_WEATHER_ENUM : samp_weather
-
-      BuiltEnvironment : season
-
-      BuiltEnvironment : season_use
-
-          BuiltEnvironment --|&gt; SEASON_USE_ENUM : season_use
-
-      BuiltEnvironment : shad_dev_water_mold
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_1 : shad_dev_water_mold
-
-      BuiltEnvironment : shading_device_cond
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_2 : shading_device_cond
-
-      BuiltEnvironment : shading_device_loc
-
-          BuiltEnvironment --|&gt; SHADING_DEVICE_LOC_ENUM : shading_device_loc
-
-      BuiltEnvironment : shading_device_mat
-
-      BuiltEnvironment : shading_device_type
-
-          BuiltEnvironment --|&gt; SHADING_DEVICE_TYPE_ENUM : shading_device_type
-
-      BuiltEnvironment : space_typ_state
-
-          BuiltEnvironment --|&gt; SPACE_TYP_STATE_ENUM : space_typ_state
-
-      BuiltEnvironment : specific
-
-          BuiltEnvironment --|&gt; SPECIFIC_ENUM : specific
-
-      BuiltEnvironment : specific_humidity
-
-      BuiltEnvironment : substructure_type
-
-          BuiltEnvironment --|&gt; SUBSTRUCTURE_TYPE_ENUM : substructure_type
-
-      BuiltEnvironment : surf_air_cont
-
-          BuiltEnvironment --|&gt; SURF_AIR_CONT_ENUM : surf_air_cont
-
-      BuiltEnvironment : surf_humidity
-
-      BuiltEnvironment : surf_material
-
-          BuiltEnvironment --|&gt; SURF_MATERIAL_ENUM : surf_material
-
-      BuiltEnvironment : surf_moisture
-
-      BuiltEnvironment : surf_moisture_ph
-
-      BuiltEnvironment : surf_temp
-
-      BuiltEnvironment : temp_out
-
-      BuiltEnvironment : train_line
-
-          BuiltEnvironment --|&gt; TRAIN_LINE_ENUM : train_line
-
-      BuiltEnvironment : train_stat_loc
-
-          BuiltEnvironment --|&gt; TRAIN_STAT_LOC_ENUM : train_stat_loc
-
-      BuiltEnvironment : train_stop_loc
-
-          BuiltEnvironment --|&gt; TRAIN_STOP_LOC_ENUM : train_stop_loc
-
-      BuiltEnvironment : typ_occup_density
-
-      BuiltEnvironment : ventilation_type
-
-      BuiltEnvironment : vis_media
-
-      BuiltEnvironment : wall_area
-
-      BuiltEnvironment : wall_const_type
-
-          BuiltEnvironment --|&gt; WALL_CONST_TYPE_ENUM : wall_const_type
-
-      BuiltEnvironment : wall_finish_mat
-
-          BuiltEnvironment --|&gt; WALL_FINISH_MAT_ENUM : wall_finish_mat
-
-      BuiltEnvironment : wall_height
-
-      BuiltEnvironment : wall_loc
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_0 : wall_loc
-
-      BuiltEnvironment : wall_surf_treatment
-
-          BuiltEnvironment --|&gt; WALL_SURF_TREATMENT_ENUM : wall_surf_treatment
-
-      BuiltEnvironment : wall_texture
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_4 : wall_texture
-
-      BuiltEnvironment : wall_thermal_mass
-
-      BuiltEnvironment : wall_water_mold
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_1 : wall_water_mold
-
-      BuiltEnvironment : water_feat_size
-
-      BuiltEnvironment : water_feat_type
-
-          BuiltEnvironment --|&gt; WATER_FEAT_TYPE_ENUM : water_feat_type
-
-      BuiltEnvironment : weekday
-
-          BuiltEnvironment --|&gt; WEEKDAY_ENUM : weekday
-
-      BuiltEnvironment : window_cond
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_2 : window_cond
-
-      BuiltEnvironment : window_cover
-
-          BuiltEnvironment --|&gt; WINDOW_COVER_ENUM : window_cover
-
-      BuiltEnvironment : window_horiz_pos
-
-          BuiltEnvironment --|&gt; WINDOW_HORIZ_POS_ENUM : window_horiz_pos
-
-      BuiltEnvironment : window_loc
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_0 : window_loc
-
-      BuiltEnvironment : window_mat
-
-          BuiltEnvironment --|&gt; WINDOW_MAT_ENUM : window_mat
-
-      BuiltEnvironment : window_open_freq
-
-      BuiltEnvironment : window_size
-
-      BuiltEnvironment : window_status
-
-          BuiltEnvironment --|&gt; WINDOW_STATUS_ENUM : window_status
-
-      BuiltEnvironment : window_type
-
-          BuiltEnvironment --|&gt; WINDOW_TYPE_ENUM : window_type
-
-      BuiltEnvironment : window_vert_pos
-
-          BuiltEnvironment --|&gt; WINDOW_VERT_POS_ENUM : window_vert_pos
-
-      BuiltEnvironment : window_water_mold
-
-          BuiltEnvironment --|&gt; SHARED_ENUM_1 : window_water_mold
-
-
-</div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Extension/">Extension</a><ul>
-<li><strong>BuiltEnvironment</strong></li>
+<li><strong>BuiltEnvironment</strong><ul>
+<li><a href="../MigsBaBuiltEnvironment/">MigsBaBuiltEnvironment</a> [ <a href="../MigsBa/">MigsBa</a>]</li>
+<li><a href="../MigsEuBuiltEnvironment/">MigsEuBuiltEnvironment</a> [ <a href="../MigsEu/">MigsEu</a>]</li>
+<li><a href="../MigsOrgBuiltEnvironment/">MigsOrgBuiltEnvironment</a> [ <a href="../MigsOrg/">MigsOrg</a>]</li>
+<li><a href="../MigsPlBuiltEnvironment/">MigsPlBuiltEnvironment</a> [ <a href="../MigsPl/">MigsPl</a>]</li>
+<li><a href="../MigsViBuiltEnvironment/">MigsViBuiltEnvironment</a> [ <a href="../MigsVi/">MigsVi</a>]</li>
+<li><a href="../MimagBuiltEnvironment/">MimagBuiltEnvironment</a> [ <a href="../Mimag/">Mimag</a>]</li>
+<li><a href="../MimarksCBuiltEnvironment/">MimarksCBuiltEnvironment</a> [ <a href="../MimarksC/">MimarksC</a>]</li>
+<li><a href="../MimarksSBuiltEnvironment/">MimarksSBuiltEnvironment</a> [ <a href="../MimarksS/">MimarksS</a>]</li>
+<li><a href="../MimsBuiltEnvironment/">MimsBuiltEnvironment</a> [ <a href="../Mims/">Mims</a>]</li>
+<li><a href="../MisagBuiltEnvironment/">MisagBuiltEnvironment</a> [ <a href="../Misag/">Misag</a>]</li>
+<li><a href="../MiuvigBuiltEnvironment/">MiuvigBuiltEnvironment</a> [ <a href="../Miuvig/">Miuvig</a>]</li>
 </ul>
 </li>
 </ul>
-<h2 id="slots">Slots</h2>
+</li>
+</ul>
+<h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
@@ -1688,29 +1361,12 @@
 <ul>
 <li>from schema: https://w3id.org/mixs-6-2-rc</li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>MIXS:0016001</td>
-</tr>
-<tr>
-<td>native</td>
-<td>mixs_6_2_rc:BuiltEnvironment</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+
 <h3 id="direct">Direct</h3>
 <details>
+
 <pre><code class="language-yaml">name: BuiltEnvironment
 description: built environment extension
 title: built environment
@@ -1959,9 +1615,12 @@ slot_usage:
 class_uri: MIXS:0016001
 
 </code></pre>
+
 </details>
+
 <h3 id="induced">Induced</h3>
 <details>
+
 <pre><code class="language-yaml">name: BuiltEnvironment
 description: built environment extension
 title: built environment
@@ -2064,7 +1723,6 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - sample
     slot_uri: MIXS:0001107
@@ -2116,7 +1774,6 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - project
     slot_uri: MIXS:0000092
@@ -2164,7 +1821,6 @@ attributes:
     description: Surface materials at the point of sampling
     title: surface material
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000758
     multivalued: false
     alias: surf_material
@@ -2182,7 +1838,6 @@ attributes:
     examples:
     - value: radon
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000759
     multivalued: true
     alias: surf_air_cont
@@ -2205,7 +1860,6 @@ attributes:
     examples:
     - value: '0.8'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - air
     - humidity
@@ -2235,7 +1889,6 @@ attributes:
     examples:
     - value: 9 gram per gram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - absolute
     - air
@@ -2267,7 +1920,6 @@ attributes:
     examples:
     - value: '0.1'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - humidity
     - surface
@@ -2291,7 +1943,6 @@ attributes:
     examples:
     - value: 20 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000124
     multivalued: false
     alias: air_temp
@@ -2318,7 +1969,6 @@ attributes:
     examples:
     - value: 15 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - surface
     - temperature
@@ -2343,7 +1993,6 @@ attributes:
     examples:
     - value: '7'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - moisture
     - ph
@@ -2364,7 +2013,6 @@ attributes:
     examples:
     - value: market
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - type
     slot_uri: MIXS:0000761
@@ -2386,7 +2034,6 @@ attributes:
     examples:
     - value: 0.01 gram per square meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - moisture
     - surface
@@ -2416,7 +2063,6 @@ attributes:
     examples:
     - value: 22 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000129
     multivalued: false
     alias: dew_point
@@ -2437,7 +2083,6 @@ attributes:
     description: Carbon dioxide (gas) amount or concentration at the time of sampling
     title: carbon dioxide
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000097
     multivalued: false
     alias: carb_dioxide
@@ -2458,7 +2103,6 @@ attributes:
     description: Ventilation system used in the sampled premises
     title: ventilation type
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0000756
     multivalued: true
@@ -2480,7 +2124,6 @@ attributes:
     examples:
     - value: total prokaryotes;3.5e7 cells per milliliter;qPCR
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{float} {unit};[ATP|MPN|qPCR|other]'
     slot_uri: MIXS:0000103
     multivalued: true
@@ -2519,7 +2162,6 @@ attributes:
     examples:
     - value: foyer
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - indoor
     slot_uri: MIXS:0000763
@@ -2535,7 +2177,6 @@ attributes:
     description: Type of indoor surface
     title: indoor surface
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000764
     multivalued: false
     alias: indoor_surf
@@ -2553,7 +2194,6 @@ attributes:
     examples:
     - value: HEPA
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - filter
     - type
@@ -2572,7 +2212,6 @@ attributes:
     examples:
     - value: heat pump
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - type
     slot_uri: MIXS:0000766
@@ -2591,7 +2230,6 @@ attributes:
     examples:
     - value: basement
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - type
     slot_uri: MIXS:0000767
@@ -2610,7 +2248,6 @@ attributes:
     examples:
     - value: rural
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000768
     multivalued: false
     alias: building_setting
@@ -2629,7 +2266,6 @@ attributes:
     examples:
     - value: desk lamp
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - light
     - type
@@ -2649,7 +2285,6 @@ attributes:
       in a cascade impactor
     title: sample size sorting method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - method
     - sample
@@ -2670,7 +2305,6 @@ attributes:
     examples:
     - value: typically occupied
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000770
     multivalued: false
     alias: space_typ_state
@@ -2686,7 +2320,6 @@ attributes:
     examples:
     - value: '25'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - density
     slot_uri: MIXS:0000771
@@ -2704,7 +2337,6 @@ attributes:
     examples:
     - value: '10'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000772
     alias: occup_samp
     owner: BuiltEnvironment
@@ -2724,7 +2356,6 @@ attributes:
     examples:
     - value: '0.1'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - density
     slot_uri: MIXS:0000217
@@ -2744,7 +2375,6 @@ attributes:
     description: The street name and building number where the sampling occurred
     title: address
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{integer}{text}'
     slot_uri: MIXS:0000218
     multivalued: false
@@ -2761,7 +2391,6 @@ attributes:
       sampling room
     title: adjacent rooms
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - adjacent
     - room
@@ -2788,7 +2417,6 @@ attributes:
     examples:
     - value: plane
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000773
     multivalued: false
     alias: aero_struc
@@ -2808,7 +2436,6 @@ attributes:
       flux per unit area
     title: amount of light
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - light
     slot_uri: MIXS:0000140
@@ -2834,7 +2461,6 @@ attributes:
     examples:
     - value: shed
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000774
     multivalued: false
     alias: arch_struc
@@ -2852,7 +2478,6 @@ attributes:
     examples:
     - value: '2'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000775
     multivalued: false
     alias: avg_occup
@@ -2875,7 +2500,6 @@ attributes:
     examples:
     - value: 25.5 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - average
     slot_uri: MIXS:0000141
@@ -2905,7 +2529,6 @@ attributes:
     examples:
     - value: 12.5 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - average
     - temperature
@@ -2931,7 +2554,6 @@ attributes:
     examples:
     - value: '1'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     slot_uri: MIXS:0000776
@@ -2950,7 +2572,6 @@ attributes:
     examples:
     - value: '2'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     slot_uri: MIXS:0000777
@@ -2973,7 +2594,6 @@ attributes:
     examples:
     - value: 15 years
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - age
     slot_uri: MIXS:0000145
@@ -2999,7 +2619,6 @@ attributes:
     examples:
     - value: rural
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000778
     multivalued: false
     alias: built_struc_set
@@ -3015,7 +2634,6 @@ attributes:
       to form a system capable of supporting loads
     title: built structure type
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - type
     slot_uri: MIXS:0000721
@@ -3038,7 +2656,6 @@ attributes:
     examples:
     - value: 25 square meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - area
     - ceiling
@@ -3065,7 +2682,6 @@ attributes:
     examples:
     - value: damaged
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - ceiling
     - condition
@@ -3085,7 +2701,6 @@ attributes:
     examples:
     - value: stucco
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - ceiling
     - material
@@ -3105,7 +2720,6 @@ attributes:
     examples:
     - value: presence of mold visible
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - ceiling
     slot_uri: MIXS:0000781
@@ -3124,7 +2738,6 @@ attributes:
     examples:
     - value: concrete
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - ceiling
     slot_uri: MIXS:0000782
@@ -3143,7 +2756,6 @@ attributes:
     examples:
     - value: popcorn
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - ceiling
     - texture
@@ -3168,7 +2780,6 @@ attributes:
       air flow
     title: ceiling thermal mass
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - ceiling
     - mass
@@ -3194,7 +2805,6 @@ attributes:
     examples:
     - value: coffered
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - ceiling
     - type
@@ -3214,7 +2824,6 @@ attributes:
     examples:
     - value: '12345'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - identifier
     slot_uri: MIXS:0000785
@@ -3233,7 +2842,6 @@ attributes:
     examples:
     - value: '2013-03-25T12:42:31+01:00'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - date
     - rain
@@ -3253,7 +2861,6 @@ attributes:
     examples:
     - value: maintenance plans
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - documents
     slot_uri: MIXS:0000787
@@ -3276,7 +2883,6 @@ attributes:
     examples:
     - value: 2.5 square meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - area
     - door
@@ -3303,7 +2909,6 @@ attributes:
     examples:
     - value: new
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - condition
     - door
@@ -3323,7 +2928,6 @@ attributes:
     examples:
     - value: inward
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - direction
     - door
@@ -3343,7 +2947,6 @@ attributes:
     examples:
     - value: north
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     - location
@@ -3363,7 +2966,6 @@ attributes:
     examples:
     - value: wood
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     - material
@@ -3383,7 +2985,6 @@ attributes:
     examples:
     - value: swinging
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     slot_uri: MIXS:0000792
@@ -3402,7 +3003,6 @@ attributes:
     examples:
     - value: presence of mold visible
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     slot_uri: MIXS:0000793
@@ -3421,7 +3021,6 @@ attributes:
     examples:
     - value: wooden
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     - type
@@ -3441,7 +3040,6 @@ attributes:
     examples:
     - value: revolving
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     - type
@@ -3461,7 +3059,6 @@ attributes:
     examples:
     - value: hollow
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     - type
@@ -3485,7 +3082,6 @@ attributes:
     examples:
     - value: battened
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     - type
@@ -3509,7 +3105,6 @@ attributes:
     examples:
     - value: sketch
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - drawings
     slot_uri: MIXS:0000798
@@ -3528,7 +3123,6 @@ attributes:
     examples:
     - value: '2'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     slot_uri: MIXS:0000799
@@ -3547,7 +3141,6 @@ attributes:
     examples:
     - value: '4'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     slot_uri: MIXS:0000800
@@ -3568,7 +3161,6 @@ attributes:
     description: The amount of exposed ductwork in the room
     title: exposed ductwork
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000144
     multivalued: false
     alias: exp_duct
@@ -3589,7 +3181,6 @@ attributes:
     description: The number of exposed pipes in the room
     title: exposed pipes
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - pipes
     slot_uri: MIXS:0000220
@@ -3611,7 +3202,6 @@ attributes:
     description: The number of exterior doors in the built structure
     title: exterior door count
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     - door
@@ -3632,7 +3222,6 @@ attributes:
     examples:
     - value: wood burning
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - type
     slot_uri: MIXS:0000802
@@ -3653,7 +3242,6 @@ attributes:
     description: The time period since installment of the carpet or flooring
     title: floor age
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - age
     - floor
@@ -3681,7 +3269,6 @@ attributes:
     description: The area of the floor space within the room
     title: floor area
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - area
     - floor
@@ -3708,7 +3295,6 @@ attributes:
     examples:
     - value: new
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - condition
     - floor
@@ -3727,7 +3313,6 @@ attributes:
       penthouse
     title: floor count
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     - floor
@@ -3751,7 +3336,6 @@ attributes:
     examples:
     - value: carpet
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - floor
     - material
@@ -3774,7 +3358,6 @@ attributes:
     examples:
     - value: ceiling discoloration
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - floor
     slot_uri: MIXS:0000805
@@ -3794,7 +3377,6 @@ attributes:
     examples:
     - value: concrete
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - floor
     slot_uri: MIXS:0000806
@@ -3815,7 +3397,6 @@ attributes:
     description: The ability of the floor to provide inertia against temperature fluctuations
     title: floor thermal mass
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - floor
     - mass
@@ -3840,7 +3421,6 @@ attributes:
       cleaning might be on a Daily basis, Weekly, Monthly, Quarterly or Annually
     title: frequency of cleaning
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '[ Daily| Weekly| Monthly| Quarterly | Annually| other]'
     slot_uri: MIXS:0000226
     multivalued: false
@@ -3857,7 +3437,6 @@ attributes:
     description: The number of times a meal is cooked per week
     title: frequency of cooking
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - frequency
     slot_uri: MIXS:0000227
@@ -3881,7 +3460,6 @@ attributes:
     examples:
     - value: chair
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000807
     multivalued: false
     alias: furniture
@@ -3898,7 +3476,6 @@ attributes:
     examples:
     - value: male
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000808
     multivalued: false
     alias: gender_restroom
@@ -3913,7 +3490,6 @@ attributes:
     description: The total count of hallways and cooridors in the built structure
     title: hallway/corridor count
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - corridor
     - count
@@ -3934,7 +3510,6 @@ attributes:
     examples:
     - value: right handedness
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000809
     multivalued: false
     alias: handidness
@@ -3951,7 +3526,6 @@ attributes:
     examples:
     - value: north
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - delivery
     - location
@@ -3972,7 +3546,6 @@ attributes:
     examples:
     - value: radiant
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - delivery
     - method
@@ -3990,7 +3563,6 @@ attributes:
     description: The heating system identifier
     title: heating system identifier
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - identifier
     slot_uri: MIXS:0000833
@@ -4011,7 +3583,6 @@ attributes:
     description: The average carpet fiber height in the indoor environment
     title: height carpet fiber mat
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - height
     slot_uri: MIXS:0000167
@@ -4038,7 +3609,6 @@ attributes:
     description: The recorded value at sampling time (power density)
     title: inside lux light
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - inside
     - light
@@ -4065,7 +3635,6 @@ attributes:
     examples:
     - value: damaged
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - condition
     - interior
@@ -4086,7 +3655,6 @@ attributes:
     examples:
     - value: '2013-03-25T12:42:31+01:00'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - time
     slot_uri: MIXS:0000814
@@ -4103,7 +3671,6 @@ attributes:
     description: The maximum amount of people allowed in the indoor environment
     title: maximum occupancy
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - maximum
     slot_uri: MIXS:0000229
@@ -4127,7 +3694,6 @@ attributes:
     examples:
     - value: elevator
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000815
     multivalued: false
     alias: mech_struc
@@ -4142,7 +3708,6 @@ attributes:
     description: The number of plant(s) in the sampling space
     title: number of houseplants
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - number
     slot_uri: MIXS:0000230
@@ -4164,7 +3729,6 @@ attributes:
     description: The number of pets residing in the sampled space
     title: number of pets
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - number
     slot_uri: MIXS:0000231
@@ -4186,7 +3750,6 @@ attributes:
     description: The number of individuals currently occupying in the sampling location
     title: number of residents
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - number
     slot_uri: MIXS:0000232
@@ -4210,7 +3773,6 @@ attributes:
     examples:
     - value: estimate
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - documentation
     slot_uri: MIXS:0000816
@@ -4229,7 +3791,6 @@ attributes:
     examples:
     - value: northwest
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - exterior
     - wall
@@ -4249,7 +3810,6 @@ attributes:
     examples:
     - value: southwest
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - exterior
     - window
@@ -4273,7 +3833,6 @@ attributes:
     examples:
     - value: 12 per kilogram of air
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - humidity
     - relative
@@ -4304,7 +3863,6 @@ attributes:
     examples:
     - value: cat;5
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - animal
     - presence
@@ -4326,7 +3884,6 @@ attributes:
     examples:
     - value: West side
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000820
     multivalued: false
     alias: quad_pos
@@ -4343,7 +3900,6 @@ attributes:
     examples:
     - value: center of car
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - location
     - relative
@@ -4365,7 +3921,6 @@ attributes:
     description: The rate at which outside air replaces indoor air in a given space
     title: room air exchange rate
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - air
     - rate
@@ -4391,7 +3946,6 @@ attributes:
       of a distinguisahable space within a built structure
     title: room architectural elements
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - room
     slot_uri: MIXS:0000233
@@ -4410,7 +3964,6 @@ attributes:
     examples:
     - value: new
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - condition
     - room
@@ -4429,7 +3982,6 @@ attributes:
       types
     title: room count
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     - room
@@ -4456,7 +4008,6 @@ attributes:
     examples:
     - value: 4 meter x 4 meter x 4 meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - dimensions
     - room
@@ -4481,7 +4032,6 @@ attributes:
       room and adjacent rooms
     title: room door distance
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - distance
     - door
@@ -4507,7 +4057,6 @@ attributes:
     examples:
     - value: interior room
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - location
     - room
@@ -4526,7 +4075,6 @@ attributes:
       of events of moisture damage or mold observed
     title: room moisture damage or mold history
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - history
     - moisture
@@ -4549,7 +4097,6 @@ attributes:
     description: The net floor area of sampling room. Net area excludes wall thicknesses
     title: room net area
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - area
     - room
@@ -4572,7 +4119,6 @@ attributes:
     description: Count of room occupancy at time of sampling
     title: room occupancy
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - room
     slot_uri: MIXS:0000236
@@ -4597,7 +4143,6 @@ attributes:
     examples:
     - value: south corner
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - room
     slot_uri: MIXS:0000824
@@ -4621,7 +4166,6 @@ attributes:
     examples:
     - value: bathroom
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - room
     - type
@@ -4646,7 +4190,6 @@ attributes:
     description: Volume of sampling room
     title: room volume
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - room
     - volume
@@ -4669,7 +4212,6 @@ attributes:
     description: Number of windows in the room
     title: room window count
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - count
     - room
@@ -4690,7 +4232,6 @@ attributes:
     examples:
     - value: office
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - doorway
     - room
@@ -4709,7 +4250,6 @@ attributes:
       as sampling room
     title: rooms that are on the same hallway
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - hallway
     - room
@@ -4733,7 +4273,6 @@ attributes:
       sampling room
     title: rooms that share a door with sampling room
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - door
     - room
@@ -4757,7 +4296,6 @@ attributes:
       sampling room
     title: rooms that share a wall with sampling room
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - room
     - wall
@@ -4782,7 +4320,6 @@ attributes:
     examples:
     - value: foggy
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - day
     - weather
@@ -4806,7 +4343,6 @@ attributes:
     examples:
     - value: 4th floor
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - floor
     string_serialization: '[1st floor|2nd floor|{integer} floor|basement|lobby]'
@@ -4826,7 +4362,6 @@ attributes:
       on the building floor plans
     title: sampling room ID or name
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - identifier
     - room
@@ -4852,7 +4387,6 @@ attributes:
     description: The recent and long term history of outside sampling
     title: sampling time outside
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - time
     string_serialization: '{float}'
@@ -4882,7 +4416,6 @@ attributes:
     examples:
     - value: autumn [NCIT:C94733]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - season
     string_serialization: '{termLabel} [{termID}]'
@@ -4904,7 +4437,6 @@ attributes:
     examples:
     - value: Winter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - season
     - use
@@ -4924,7 +4456,6 @@ attributes:
     examples:
     - value: new
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - condition
     - device
@@ -4944,7 +4475,6 @@ attributes:
     examples:
     - value: exterior
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - device
     - location
@@ -4966,7 +4496,6 @@ attributes:
     description: The material the shading device is composed of
     title: shading device material
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - device
     - material
@@ -4987,7 +4516,6 @@ attributes:
     examples:
     - value: no presence of mold visible
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - device
     slot_uri: MIXS:0000834
@@ -5007,7 +4535,6 @@ attributes:
     - value: slatted aluminum
       description: was slatted aluminum awning
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - device
     - type
@@ -5032,7 +4559,6 @@ attributes:
     examples:
     - value: 15 per kilogram of air
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - humidity
     slot_uri: MIXS:0000214
@@ -5058,7 +4584,6 @@ attributes:
     examples:
     - value: construction
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000836
     multivalued: false
     alias: specific
@@ -5079,7 +4604,6 @@ attributes:
     examples:
     - value: 5 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - house
     - temperature
@@ -5105,7 +4629,6 @@ attributes:
     examples:
     - value: red
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - train
     slot_uri: MIXS:0000837
@@ -5124,7 +4647,6 @@ attributes:
     examples:
     - value: forest hills
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - location
     - train
@@ -5144,7 +4666,6 @@ attributes:
     examples:
     - value: end
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - location
     - stop
@@ -5169,7 +4690,6 @@ attributes:
     examples:
     - value: 3D scans
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '[photos|videos|commonly of the building|site context (adjacent
       buildings, vegetation, terrain, streets)|interiors|equipment|3D scans]'
     slot_uri: MIXS:0000840
@@ -5190,7 +4710,6 @@ attributes:
     description: The total area of the sampled room's walls
     title: wall area
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - area
     - wall
@@ -5217,7 +4736,6 @@ attributes:
     examples:
     - value: fire resistive
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - type
     - wall
@@ -5237,7 +4755,6 @@ attributes:
     examples:
     - value: wood
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - material
     - wall
@@ -5259,7 +4776,6 @@ attributes:
     description: The average height of the walls in the sampled room
     title: wall height
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - height
     - wall
@@ -5285,7 +4801,6 @@ attributes:
     examples:
     - value: north
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - location
     - wall
@@ -5305,7 +4820,6 @@ attributes:
     examples:
     - value: no presence of mold visible
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - wall
     slot_uri: MIXS:0000844
@@ -5324,7 +4838,6 @@ attributes:
     examples:
     - value: paneling
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - surface
     - treatment
@@ -5345,7 +4858,6 @@ attributes:
     examples:
     - value: popcorn
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - texture
     - wall
@@ -5369,7 +4881,6 @@ attributes:
       only with paint
     title: wall thermal mass
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - mass
     - wall
@@ -5397,7 +4908,6 @@ attributes:
     description: The size of the water feature
     title: water feature size
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - feature
     - size
@@ -5424,7 +4934,6 @@ attributes:
     examples:
     - value: stream
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - feature
     - type
@@ -5445,7 +4954,6 @@ attributes:
     examples:
     - value: Sunday
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000848
     multivalued: false
     alias: weekday
@@ -5467,7 +4975,6 @@ attributes:
     description: The window's length and width
     title: window area/size
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - window
     string_serialization: '{float} {unit} x {float} {unit}'
@@ -5487,7 +4994,6 @@ attributes:
     examples:
     - value: rupture
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - condition
     - window
@@ -5507,7 +5013,6 @@ attributes:
     examples:
     - value: curtains
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - window
     slot_uri: MIXS:0000850
@@ -5526,7 +5031,6 @@ attributes:
     examples:
     - value: middle
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - window
     slot_uri: MIXS:0000851
@@ -5545,7 +5049,6 @@ attributes:
     examples:
     - value: west
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - location
     - window
@@ -5565,7 +5068,6 @@ attributes:
     examples:
     - value: wood
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - material
     - window
@@ -5583,7 +5085,6 @@ attributes:
     description: The number of times windows are opened per week
     title: window open frequency
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - frequency
     - window
@@ -5603,7 +5104,6 @@ attributes:
     examples:
     - value: no presence of mold visible
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - window
     slot_uri: MIXS:0000854
@@ -5623,7 +5123,6 @@ attributes:
     examples:
     - value: open
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - status
     - window
@@ -5643,7 +5142,6 @@ attributes:
     examples:
     - value: fixed window
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - type
     - window
@@ -5663,7 +5161,6 @@ attributes:
     examples:
     - value: middle
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - window
     slot_uri: MIXS:0000857
@@ -5678,31 +5175,57 @@ attributes:
 class_uri: MIXS:0016001
 
 </code></pre>
+
 </details>
-</article>
-</div>
-<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-</div>
-</main>
-<footer class="md-footer">
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-copyright">
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
     </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<div class="md-dialog" data-md-component="dialog">
-<div class="md-dialog__inner md-typeset"></div>
-</div>
-<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
-<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
 </html>

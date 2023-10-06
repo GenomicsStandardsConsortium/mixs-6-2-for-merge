@@ -1,344 +1,377 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/HostAssociated/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
+    
+    
+      
+        <title>Class: HostAssociated - mixs-6-2-for-merge</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.79e020e9.min.css">
+      
+      
 
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/HostAssociated/" rel="canonical"/>
-<link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.5.3, mkdocs-material-9.4.3" name="generator"/>
-<title>Class: HostAssociated - mixs-6-2-for-merge</title>
-<link href="../assets/stylesheets/main.79e020e9.min.css" rel="stylesheet"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
-<body dir="ltr">
-<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#class-hostassociated">
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-hostassociated" class="md-skip">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
 <header class="md-header md-header--shadow" data-md-component="header">
-<nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="mixs-6-2-for-merge" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-6-2-for-merge">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-</a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
-</label>
-<div class="md-header__title" data-md-component="header-title">
-<div class="md-header__ellipsis">
-<div class="md-header__topic">
-<span class="md-ellipsis">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="mixs-6-2-for-merge" class="md-header__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             mixs-6-2-for-merge
           </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Class: HostAssociated
             
           </span>
-</div>
-</div>
-</div>
-<label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-</label>
-<div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
-<label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
-</label>
-<nav aria-label="Search" class="md-search__options">
-<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
-</button>
-</nav>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="search-result">
-<div class="md-search-result__meta">
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
             Initializing search
           </div>
-<ol class="md-search-result__list" role="presentation"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="md-header__source">
-<a class="md-source" data-md-component="source" href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-</nav>
+      </div>
+    
+  </nav>
+  
 </header>
-<div class="md-container" data-md-component="container">
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="mixs-6-2-for-merge" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-6-2-for-merge">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-</a>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="mixs-6-2-for-merge" class="md-nav__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
     mixs-6-2-for-merge
   </label>
-<div class="md-nav__source">
-<a class="md-source" data-md-component="source" href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="..">
-<span class="md-ellipsis">
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
     Index
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../about/">
-<span class="md-ellipsis">
-    About
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../term_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Full term table
   </span>
-</a>
-</li>
-</ul>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
     Inheritance
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-    Slots
+      
+        <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-    Usages
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
     Identifier and Mapping Information
   </a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
     Schema Source
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-    Mappings
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
     LinkML Source
   </a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
+  
+    <nav class="md-nav" aria-label="LinkML Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct" class="md-nav__link">
     Direct
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
+        
+          <li class="md-nav__item">
+  <a href="#induced" class="md-nav__link">
     Induced
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset">
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
 <h1 id="class-hostassociated">Class: HostAssociated</h1>
 <p><em>host-associated extension</em></p>
-<p>URI: <a href="https://w3id.org/mixs/0016002">MIXS:0016002</a></p>
-<div class="mermaid"> classDiagram
-    class HostAssociated
-      Extension &lt;|-- HostAssociated
-
-
-      HostAssociated &lt;|-- MigsEuHostAssociated
-      HostAssociated &lt;|-- MimsHostAssociated
-      HostAssociated &lt;|-- MimarksSHostAssociated
-
-
-      HostAssociated : alt
-
-      HostAssociated : ances_data
-
-      HostAssociated : biol_stat
-
-      HostAssociated : blood_press_diast
-
-      HostAssociated : blood_press_syst
-
-      HostAssociated : chem_administration
-
-      HostAssociated : depth
-
-      HostAssociated : elev
-
-      HostAssociated : genetic_mod
-
-      HostAssociated : gravidity
-
-      HostAssociated : host_age
-
-      HostAssociated : host_body_habitat
-
-      HostAssociated : host_body_product
-
-      HostAssociated : host_body_site
-
-      HostAssociated : host_body_temp
-
-      HostAssociated : host_color
-
-      HostAssociated : host_common_name
-
-      HostAssociated : host_diet
-
-      HostAssociated : host_disease_stat
-
-      HostAssociated : host_dry_mass
-
-      HostAssociated : host_fam_rel
-
-      HostAssociated : host_genotype
-
-      HostAssociated : host_growth_cond
-
-      HostAssociated : host_height
-
-      HostAssociated : host_last_meal
-
-      HostAssociated : host_length
-
-      HostAssociated : host_life_stage
-
-      HostAssociated : host_phenotype
-
-      HostAssociated : host_sex
-
-      HostAssociated : host_shape
-
-      HostAssociated : host_subject_id
-
-      HostAssociated : host_subspecf_genlin
-
-      HostAssociated : host_substrate
-
-      HostAssociated : host_symbiont
-
-      HostAssociated : host_taxid
-
-      HostAssociated : host_tot_mass
-
-      HostAssociated : misc_param
-
-      HostAssociated : organism_count
-
-      HostAssociated : oxy_stat_samp
-
-          HostAssociated --|&gt; OXY_STAT_SAMP_ENUM : oxy_stat_samp
-
-      HostAssociated : perturbation
-
-      HostAssociated : project_name
-
-      HostAssociated : salinity
-
-      HostAssociated : samp_capt_status
-
-          HostAssociated --|&gt; SAMP_CAPT_STATUS_ENUM : samp_capt_status
-
-      HostAssociated : samp_dis_stage
-
-          HostAssociated --|&gt; SAMP_DIS_STAGE_ENUM : samp_dis_stage
-
-      HostAssociated : samp_name
-
-      HostAssociated : samp_store_dur
-
-      HostAssociated : samp_store_loc
-
-      HostAssociated : samp_store_temp
-
-      HostAssociated : samp_vol_we_dna_ext
-
-      HostAssociated : temp
-
-
-</div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Extension/">Extension</a><ul>
 <li><strong>HostAssociated</strong><ul>
+<li><a href="../MigsBaHostAssociated/">MigsBaHostAssociated</a> [ <a href="../MigsBa/">MigsBa</a>]</li>
 <li><a href="../MigsEuHostAssociated/">MigsEuHostAssociated</a> [ <a href="../MigsEu/">MigsEu</a>]</li>
-<li><a href="../MimsHostAssociated/">MimsHostAssociated</a> [ <a href="../Mims/">Mims</a>]</li>
+<li><a href="../MigsOrgHostAssociated/">MigsOrgHostAssociated</a> [ <a href="../MigsOrg/">MigsOrg</a>]</li>
+<li><a href="../MigsPlHostAssociated/">MigsPlHostAssociated</a> [ <a href="../MigsPl/">MigsPl</a>]</li>
+<li><a href="../MigsViHostAssociated/">MigsViHostAssociated</a> [ <a href="../MigsVi/">MigsVi</a>]</li>
+<li><a href="../MimagHostAssociated/">MimagHostAssociated</a> [ <a href="../Mimag/">Mimag</a>]</li>
+<li><a href="../MimarksCHostAssociated/">MimarksCHostAssociated</a> [ <a href="../MimarksC/">MimarksC</a>]</li>
 <li><a href="../MimarksSHostAssociated/">MimarksSHostAssociated</a> [ <a href="../MimarksS/">MimarksS</a>]</li>
+<li><a href="../MimsHostAssociated/">MimsHostAssociated</a> [ <a href="../Mims/">Mims</a>]</li>
+<li><a href="../MisagHostAssociated/">MisagHostAssociated</a> [ <a href="../Misag/">Misag</a>]</li>
+<li><a href="../MiuvigHostAssociated/">MiuvigHostAssociated</a> [ <a href="../Miuvig/">Miuvig</a>]</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="slots">Slots</h2>
+<h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
@@ -651,53 +684,17 @@
 </tr>
 </tbody>
 </table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../MixsCompliantData/">MixsCompliantData</a></td>
-<td><a href="../host_associated_data/">host_associated_data</a></td>
-<td>range</td>
-<td><a href="./">HostAssociated</a></td>
-</tr>
-</tbody>
-</table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://w3id.org/mixs-6-2-rc</li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>MIXS:0016002</td>
-</tr>
-<tr>
-<td>native</td>
-<td>mixs_6_2_rc:HostAssociated</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+
 <h3 id="direct">Direct</h3>
 <details>
+
 <pre><code class="language-yaml">name: HostAssociated
 description: host-associated extension
 title: host-associated
@@ -1317,9 +1314,12 @@ slot_usage:
 class_uri: MIXS:0016002
 
 </code></pre>
+
 </details>
+
 <h3 id="induced">Induced</h3>
 <details>
+
 <pre><code class="language-yaml">name: HostAssociated
 description: host-associated extension
 title: host-associated
@@ -1905,7 +1905,6 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - sample
     slot_uri: MIXS:0001107
@@ -1957,7 +1956,6 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - project
     slot_uri: MIXS:0000092
@@ -2009,7 +2007,6 @@ attributes:
       earth's surface above sea level and the sampled position in the air
     title: altitude
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000094
     multivalued: false
     alias: alt
@@ -2047,7 +2044,6 @@ attributes:
     examples:
     - value: 10 meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000018
     multivalued: false
     alias: depth
@@ -2091,7 +2087,6 @@ attributes:
       surface, such as an aircraft in flight or a spacecraft in orbit
     title: elevation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000093
     multivalued: false
     alias: elev
@@ -2136,7 +2131,6 @@ attributes:
     examples:
     - value: A/3*B
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000247
     multivalued: false
     alias: ances_data
@@ -2160,7 +2154,6 @@ attributes:
     examples:
     - value: natural
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - status
     string_serialization: '[wild|natural|semi-natural|inbred line|breeder''s line|hybrid|clonal
@@ -2189,7 +2182,6 @@ attributes:
     examples:
     - value: aox1A transgenic
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{PMID}|{DOI}|{URL}'
     slot_uri: MIXS:0000859
     multivalued: false
@@ -2212,7 +2204,6 @@ attributes:
     examples:
     - value: human
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000248
     multivalued: false
     alias: host_common_name
@@ -2232,7 +2223,6 @@ attributes:
     examples:
     - value: farm sample
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - sample
     - status
@@ -2254,7 +2244,6 @@ attributes:
     examples:
     - value: infection
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - disease
     - sample
@@ -2275,7 +2264,6 @@ attributes:
     examples:
     - value: '7955'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{NCBI taxid}'
     slot_uri: MIXS:0000250
     multivalued: false
@@ -2297,7 +2285,6 @@ attributes:
     examples:
     - value: MPI123
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000861
     multivalued: false
     alias: host_subject_id
@@ -2321,7 +2308,6 @@ attributes:
     examples:
     - value: 10 days
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000255
     multivalued: false
     alias: host_age
@@ -2353,7 +2339,6 @@ attributes:
     examples:
     - value: adult
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0000251
     multivalued: false
@@ -2379,7 +2364,6 @@ attributes:
     - example of non-binary from Excel sheets does not match any of the enumerated
       values
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - host
     - host.
@@ -2410,7 +2394,6 @@ attributes:
     examples:
     - value: rabies [DOID:11260]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]|{text}'
     slot_uri: MIXS:0000031
     multivalued: false
@@ -2441,7 +2424,6 @@ attributes:
       (chebi) (v 163), http://purl.bioontology.org/ontology/chebi
     title: chemical administration
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}];{timestamp}'
     slot_uri: MIXS:0000751
     multivalued: true
@@ -2474,7 +2456,6 @@ attributes:
     examples:
     - value: nasopharynx
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000866
     multivalued: false
     alias: host_body_habitat
@@ -2494,7 +2475,6 @@ attributes:
     examples:
     - value: gill [UBERON:0002535]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000867
     multivalued: false
@@ -2524,7 +2504,6 @@ attributes:
     examples:
     - value: mucus [FMA:66938]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - body
     - host
@@ -2553,7 +2532,6 @@ attributes:
     examples:
     - value: 2500 gram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000263
     multivalued: false
     alias: host_tot_mass
@@ -2585,7 +2563,6 @@ attributes:
     examples:
     - value: 0.1 meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000264
     multivalued: false
     alias: host_height
@@ -2615,7 +2592,6 @@ attributes:
     description: The length of subject
     title: host length
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000256
     multivalued: false
     alias: host_length
@@ -2643,7 +2619,6 @@ attributes:
     examples:
     - value: herbivore
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000869
     multivalued: true
     alias: host_diet
@@ -2666,7 +2641,6 @@ attributes:
     examples:
     - value: corn feed;P2H
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{duration}'
     slot_uri: MIXS:0000870
     multivalued: true
@@ -2687,7 +2661,6 @@ attributes:
     description: Literature reference giving growth conditions of the host
     title: host growth conditions
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000871
     multivalued: false
     alias: host_growth_cond
@@ -2708,7 +2681,6 @@ attributes:
     description: The growth substrate of the host
     title: host substrate
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000252
     multivalued: false
     alias: host_substrate
@@ -2727,7 +2699,6 @@ attributes:
     examples:
     - value: offspring;Mussel25
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{text}'
     slot_uri: MIXS:0000872
     multivalued: true
@@ -2760,7 +2731,6 @@ attributes:
     examples:
     - value: 'serovar:Newport, variety:glabrum, cultivar: Red Delicious'
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - host
     - host.
@@ -2785,7 +2755,6 @@ attributes:
     examples:
     - value: C57BL/6
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000365
     multivalued: false
     alias: host_genotype
@@ -2812,7 +2781,6 @@ attributes:
     examples:
     - value: elongated [PATO:0001154]
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]'
     slot_uri: MIXS:0000874
     multivalued: false
@@ -2839,7 +2807,6 @@ attributes:
     examples:
     - value: 15 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000274
     multivalued: false
     alias: host_body_temp
@@ -2871,7 +2838,6 @@ attributes:
     examples:
     - value: 500 gram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - dry
     - host
@@ -2905,7 +2871,6 @@ attributes:
     description: Resting diastolic blood pressure, measured as mm mercury
     title: host blood pressure diastolic
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - host
     - host.
@@ -2934,7 +2899,6 @@ attributes:
     description: Resting systolic blood pressure, measured as mm mercury
     title: host blood pressure systolic
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - host
     - host.
@@ -2959,7 +2923,6 @@ attributes:
     description: The color of host
     title: host color
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000260
     multivalued: false
     alias: host_color
@@ -2975,7 +2938,6 @@ attributes:
     description: Morphological shape of host
     title: host shape
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000261
     multivalued: false
     alias: host_shape
@@ -2992,7 +2954,6 @@ attributes:
       specifying which is used
     title: gravidity
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{boolean};{timestamp}'
     slot_uri: MIXS:0000875
     multivalued: false
@@ -3012,7 +2973,6 @@ attributes:
       of the entire perturbation period; can include multiple perturbation types
     title: perturbation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{Rn/start_time/end_time/duration}'
     slot_uri: MIXS:0000754
     multivalued: true
@@ -3056,7 +3016,6 @@ attributes:
     examples:
     - value: 25 practical salinity unit
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - salinity
     slot_uri: MIXS:0000183
@@ -3095,7 +3054,6 @@ attributes:
     description: Oxygenation status of sample
     title: oxygenation status of sample
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000753
     multivalued: false
     alias: oxy_stat_samp
@@ -3126,7 +3084,6 @@ attributes:
     description: Temperature of the sample at the time of sampling
     title: temperature
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000113
     multivalued: false
     alias: temp
@@ -3183,7 +3140,6 @@ attributes:
     examples:
     - value: total prokaryotes;3.5e7 cells per milliliter;qPCR
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{float} {unit};[ATP|MPN|qPCR|other]'
     slot_uri: MIXS:0000103
     multivalued: true
@@ -3222,7 +3178,6 @@ attributes:
       Sample Size (MIXS:0000001)'
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000111
     multivalued: false
     alias: samp_vol_we_dna_ext
@@ -3281,7 +3236,6 @@ attributes:
     examples:
     - value: -80 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - sample
     - storage
@@ -3327,7 +3281,6 @@ attributes:
       which the sample was stored written in ISO 8601 format
     title: sample storage duration
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000116
     multivalued: false
     alias: samp_store_dur
@@ -3367,7 +3320,6 @@ attributes:
     description: Location at which sample was stored, usually name of a specific freezer/room
     title: sample storage location
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0000755
     multivalued: false
@@ -3407,7 +3359,6 @@ attributes:
     examples:
     - value: flukeworms
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0001298
     multivalued: true
@@ -3438,7 +3389,6 @@ attributes:
     examples:
     - value: Bicarbonate ion concentration;2075 micromole per kilogram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - parameter
     string_serialization: '{text};{float} {unit}'
@@ -3475,31 +3425,57 @@ attributes:
 class_uri: MIXS:0016002
 
 </code></pre>
+
 </details>
-</article>
-</div>
-<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-</div>
-</main>
-<footer class="md-footer">
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-copyright">
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
     </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<div class="md-dialog" data-md-component="dialog">
-<div class="md-dialog__inner md-typeset"></div>
-</div>
-<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
-<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
 </html>

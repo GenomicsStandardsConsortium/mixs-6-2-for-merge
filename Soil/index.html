@@ -1,362 +1,377 @@
 
-<!DOCTYPE html>
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/Soil/">
+      
+      
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.4.3">
+    
+    
+      
+        <title>Class: Soil - mixs-6-2-for-merge</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.79e020e9.min.css">
+      
+      
 
-<html class="no-js" lang="en">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://GenomicsStandardsConsortium.github.io/mixs-6-2-for-merge/Soil/" rel="canonical"/>
-<link href="../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.5.3, mkdocs-material-9.4.3" name="generator"/>
-<title>Class: Soil - mixs-6-2-for-merge</title>
-<link href="../assets/stylesheets/main.79e020e9.min.css" rel="stylesheet"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
-<style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
-<script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
-</head>
-<body dir="ltr">
-<script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
-<input autocomplete="off" class="md-toggle" data-md-toggle="drawer" id="__drawer" type="checkbox"/>
-<input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
-<label class="md-overlay" for="__drawer"></label>
-<div data-md-component="skip">
-<a class="md-skip" href="#class-soil">
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#class-soil" class="md-skip">
           Skip to content
         </a>
-</div>
-<div data-md-component="announce">
-</div>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
 <header class="md-header md-header--shadow" data-md-component="header">
-<nav aria-label="Header" class="md-header__inner md-grid">
-<a aria-label="mixs-6-2-for-merge" class="md-header__button md-logo" data-md-component="logo" href=".." title="mixs-6-2-for-merge">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-</a>
-<label class="md-header__button md-icon" for="__drawer">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"></path></svg>
-</label>
-<div class="md-header__title" data-md-component="header-title">
-<div class="md-header__ellipsis">
-<div class="md-header__topic">
-<span class="md-ellipsis">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="mixs-6-2-for-merge" class="md-header__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
             mixs-6-2-for-merge
           </span>
-</div>
-<div class="md-header__topic" data-md-component="header-topic">
-<span class="md-ellipsis">
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
             
               Class: Soil
             
           </span>
-</div>
-</div>
-</div>
-<label class="md-header__button md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-</label>
-<div class="md-search" data-md-component="search" role="dialog">
-<label class="md-search__overlay" for="__search"></label>
-<div class="md-search__inner" role="search">
-<form class="md-search__form" name="search">
-<input aria-label="Search" autocapitalize="off" autocomplete="off" autocorrect="off" class="md-search__input" data-md-component="search-query" name="query" placeholder="Search" required="" spellcheck="false" type="text"/>
-<label class="md-search__icon md-icon" for="__search">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"></path></svg>
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"></path></svg>
-</label>
-<nav aria-label="Search" class="md-search__options">
-<button aria-label="Clear" class="md-search__icon md-icon" tabindex="-1" title="Clear" type="reset">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"></path></svg>
-</button>
-</nav>
-</form>
-<div class="md-search__output">
-<div class="md-search__scrollwrap" data-md-scrollfix="">
-<div class="md-search-result" data-md-component="search-result">
-<div class="md-search-result__meta">
+        </div>
+      </div>
+    </div>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
             Initializing search
           </div>
-<ol class="md-search-result__list" role="presentation"></ol>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-</div>
-</div>
-</div>
-</div>
-<div class="md-header__source">
-<a class="md-source" data-md-component="source" href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-</nav>
+      </div>
+    
+  </nav>
+  
 </header>
-<div class="md-container" data-md-component="container">
-<main class="md-main" data-md-component="main">
-<div class="md-main__inner md-grid">
-<div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Navigation" class="md-nav md-nav--primary" data-md-level="0">
-<label class="md-nav__title" for="__drawer">
-<a aria-label="mixs-6-2-for-merge" class="md-nav__button md-logo" data-md-component="logo" href=".." title="mixs-6-2-for-merge">
-<svg viewbox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"></path></svg>
-</a>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="mixs-6-2-for-merge" class="md-nav__button md-logo" aria-label="mixs-6-2-for-merge" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
     mixs-6-2-for-merge
   </label>
-<div class="md-nav__source">
-<a class="md-source" data-md-component="source" href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository">
-<div class="md-source__icon md-icon">
-<svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
-</div>
-<div class="md-source__repository">
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/GenomicsStandardsConsortium/mixs-6-2-for-merge" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
     GitHub
   </div>
 </a>
-</div>
-<ul class="md-nav__list" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="..">
-<span class="md-ellipsis">
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
     Index
   </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="../about/">
-<span class="md-ellipsis">
-    About
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../term_list/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Full term table
   </span>
-</a>
-</li>
-</ul>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
 </nav>
-</div>
-</div>
-</div>
-<div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc">
-<div class="md-sidebar__scrollwrap">
-<div class="md-sidebar__inner">
-<nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
       Table of contents
     </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
     Inheritance
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-    Slots
+      
+        <li class="md-nav__item">
+  <a href="#terms" class="md-nav__link">
+    Terms
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-    Usages
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
     Identifier and Mapping Information
   </a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
     Schema Source
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-    Mappings
-  </a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
     LinkML Source
   </a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
+  
+    <nav class="md-nav" aria-label="LinkML Source">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#direct" class="md-nav__link">
     Direct
   </a>
+  
 </li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
+        
+          <li class="md-nav__item">
+  <a href="#induced" class="md-nav__link">
     Induced
   </a>
+  
 </li>
-</ul>
-</nav>
+        
+      </ul>
+    </nav>
+  
 </li>
-</ul>
+      
+    </ul>
+  
 </nav>
-</div>
-</div>
-</div>
-<div class="md-content" data-md-component="content">
-<article class="md-content__inner md-typeset">
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
 <h1 id="class-soil">Class: Soil</h1>
 <p><em>soil extension</em></p>
-<p>URI: <a href="https://w3id.org/mixs/0016012">MIXS:0016012</a></p>
-<div class="mermaid"> classDiagram
-    class Soil
-      Extension &lt;|-- Soil
-
-
-      Soil &lt;|-- MigsEuSoil
-      Soil &lt;|-- MimsSoil
-      Soil &lt;|-- MimarksSSoil
-
-
-      Soil : agrochem_addition
-
-      Soil : al_sat
-
-      Soil : al_sat_meth
-
-      Soil : annual_precpt
-
-      Soil : annual_temp
-
-      Soil : crop_rotation
-
-      Soil : cur_land_use
-
-      Soil : cur_vegetation
-
-      Soil : cur_vegetation_meth
-
-      Soil : depth
-
-      Soil : drainage_class
-
-          Soil --|&gt; DRAINAGE_CLASS_ENUM : drainage_class
-
-      Soil : elev
-
-      Soil : extreme_event
-
-      Soil : fao_class
-
-          Soil --|&gt; FAO_CLASS_ENUM : fao_class
-
-      Soil : fire
-
-      Soil : flooding
-
-      Soil : heavy_metals
-
-      Soil : heavy_metals_meth
-
-      Soil : horizon_meth
-
-      Soil : link_addit_analys
-
-      Soil : link_class_info
-
-      Soil : link_climate_info
-
-      Soil : local_class
-
-      Soil : local_class_meth
-
-      Soil : micro_biomass_meth
-
-      Soil : microbial_biomass
-
-      Soil : misc_param
-
-      Soil : org_matter
-
-      Soil : org_nitro
-
-      Soil : ph
-
-      Soil : ph_meth
-
-      Soil : pool_dna_extracts
-
-      Soil : prev_land_use_meth
-
-      Soil : previous_land_use
-
-      Soil : profile_position
-
-          Soil --|&gt; PROFILE_POSITION_ENUM : profile_position
-
-      Soil : project_name
-
-      Soil : samp_name
-
-      Soil : samp_vol_we_dna_ext
-
-      Soil : season_precpt
-
-      Soil : season_temp
-
-      Soil : sieving
-
-      Soil : slope_aspect
-
-      Soil : slope_gradient
-
-      Soil : soil_horizon
-
-          Soil --|&gt; SOIL_HORIZON_ENUM : soil_horizon
-
-      Soil : soil_texture
-
-      Soil : soil_texture_meth
-
-      Soil : soil_type
-
-      Soil : soil_type_meth
-
-      Soil : store_cond
-
-      Soil : temp
-
-      Soil : tillage
-
-          Soil --|&gt; TILLAGE_ENUM : tillage
-
-      Soil : tot_nitro_cont_meth
-
-      Soil : tot_nitro_content
-
-      Soil : tot_org_c_meth
-
-      Soil : tot_org_carb
-
-      Soil : water_cont_soil_meth
-
-      Soil : water_content
-
-
-</div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Extension/">Extension</a><ul>
 <li><strong>Soil</strong><ul>
+<li><a href="../MigsBaSoil/">MigsBaSoil</a> [ <a href="../MigsBa/">MigsBa</a>]</li>
 <li><a href="../MigsEuSoil/">MigsEuSoil</a> [ <a href="../MigsEu/">MigsEu</a>]</li>
-<li><a href="../MimsSoil/">MimsSoil</a> [ <a href="../Mims/">Mims</a>]</li>
+<li><a href="../MigsOrgSoil/">MigsOrgSoil</a> [ <a href="../MigsOrg/">MigsOrg</a>]</li>
+<li><a href="../MigsPlSoil/">MigsPlSoil</a> [ <a href="../MigsPl/">MigsPl</a>]</li>
+<li><a href="../MigsViSoil/">MigsViSoil</a> [ <a href="../MigsVi/">MigsVi</a>]</li>
+<li><a href="../MimagSoil/">MimagSoil</a> [ <a href="../Mimag/">Mimag</a>]</li>
+<li><a href="../MimarksCSoil/">MimarksCSoil</a> [ <a href="../MimarksC/">MimarksC</a>]</li>
 <li><a href="../MimarksSSoil/">MimarksSSoil</a> [ <a href="../MimarksS/">MimarksS</a>]</li>
+<li><a href="../MimsSoil/">MimsSoil</a> [ <a href="../Mims/">Mims</a>]</li>
+<li><a href="../MisagSoil/">MisagSoil</a> [ <a href="../Misag/">Misag</a>]</li>
+<li><a href="../MiuvigSoil/">MiuvigSoil</a> [ <a href="../Miuvig/">Miuvig</a>]</li>
 </ul>
 </li>
 </ul>
 </li>
 </ul>
-<h2 id="slots">Slots</h2>
+<h2 id="terms">Terms</h2>
 <table>
 <thead>
 <tr>
@@ -711,53 +726,17 @@
 </tr>
 </tbody>
 </table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../MixsCompliantData/">MixsCompliantData</a></td>
-<td><a href="../soil_data/">soil_data</a></td>
-<td>range</td>
-<td><a href="./">Soil</a></td>
-</tr>
-</tbody>
-</table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://w3id.org/mixs-6-2-rc</li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>MIXS:0016012</td>
-</tr>
-<tr>
-<td>native</td>
-<td>mixs_6_2_rc:Soil</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
+
 <h3 id="direct">Direct</h3>
 <details>
+
 <pre><code class="language-yaml">name: Soil
 description: soil extension
 title: soil
@@ -1229,9 +1208,12 @@ slot_usage:
 class_uri: MIXS:0016012
 
 </code></pre>
+
 </details>
+
 <h3 id="induced">Induced</h3>
 <details>
+
 <pre><code class="language-yaml">name: Soil
 description: soil extension
 title: soil
@@ -1662,7 +1644,6 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - sample
     slot_uri: MIXS:0001107
@@ -1714,7 +1695,6 @@ attributes:
     in_subset:
     - investigation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - project
     slot_uri: MIXS:0000092
@@ -1766,7 +1746,6 @@ attributes:
     examples:
     - value: 10 meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000018
     multivalued: false
     alias: depth
@@ -1810,7 +1789,6 @@ attributes:
       surface, such as an aircraft in flight or a spacecraft in orbit
     title: elevation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000093
     multivalued: false
     alias: elev
@@ -1857,7 +1835,6 @@ attributes:
     examples:
     - value: conifers
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - land
     - use
@@ -1890,7 +1867,6 @@ attributes:
       systems, or agricultural crop
     title: current vegetation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0000312
     multivalued: false
@@ -1907,7 +1883,6 @@ attributes:
     description: Reference or method used in vegetation classification
     title: current vegetation method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000314
     multivalued: false
     alias: cur_vegetation_meth
@@ -1928,7 +1903,6 @@ attributes:
     description: Previous land use and dates
     title: history/previous land use
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{timestamp}'
     slot_uri: MIXS:0000315
     multivalued: false
@@ -1946,7 +1920,6 @@ attributes:
     description: Reference or method used in determining previous land use and dates
     title: history/previous land use method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000316
     multivalued: false
     alias: prev_land_use_meth
@@ -1967,7 +1940,6 @@ attributes:
     description: Whether or not crop is rotated, and if yes, rotation schedule
     title: history/crop rotation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{boolean};{Rn/start_time/end_time/duration}'
     slot_uri: MIXS:0000318
     multivalued: false
@@ -1994,7 +1966,6 @@ attributes:
     examples:
     - value: roundup;5 milligram per liter;2018-06-21
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - history
     string_serialization: '{text};{float} {unit};{timestamp}'
@@ -2013,7 +1984,6 @@ attributes:
     description: Note method(s) used for tilling
     title: history/tillage
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001081
     multivalued: true
     alias: tillage
@@ -2030,7 +2000,6 @@ attributes:
     description: Historical and/or physical evidence of fire
     title: history/fire
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001086
     multivalued: false
     alias: fire
@@ -2046,7 +2015,6 @@ attributes:
     description: Historical and/or physical evidence of flooding
     title: history/flooding
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000319
     multivalued: false
     alias: flooding
@@ -2062,7 +2030,6 @@ attributes:
     description: Unusual physical events that may have affected microbial populations
     title: history/extreme events
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000320
     multivalued: false
     alias: extreme_event
@@ -2080,7 +2047,6 @@ attributes:
       above and beneath
     title: soil horizon
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001082
     multivalued: false
     alias: soil_horizon
@@ -2096,7 +2062,6 @@ attributes:
     description: Reference or method used in determining the horizon
     title: horizon method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000321
     multivalued: false
     alias: horizon_meth
@@ -2118,7 +2083,6 @@ attributes:
       of sample sieved
     title: sieving
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{float} {unit}'
     slot_uri: MIXS:0000322
     multivalued: false
@@ -2135,7 +2099,6 @@ attributes:
     description: Water content measurement
     title: water content
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{float}'
     slot_uri: MIXS:0000185
     multivalued: false
@@ -2159,7 +2122,6 @@ attributes:
     description: Reference or method used in determining the water content of soil
     title: water content method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - content
     - method
@@ -2185,7 +2147,6 @@ attributes:
       Sample Size (MIXS:0000001)'
     title: sample volume or weight for DNA extraction
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000111
     multivalued: false
     alias: samp_vol_we_dna_ext
@@ -2239,7 +2200,6 @@ attributes:
       yes, the number of extracts that were pooled should be given
     title: pooling of DNA extracts (if done)
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{boolean};{integer}'
     slot_uri: MIXS:0000325
     multivalued: false
@@ -2260,7 +2220,6 @@ attributes:
       extraction (fresh/frozen/other)
     title: storage conditions
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text};{period}'
     slot_uri: MIXS:0000327
     multivalued: false
@@ -2277,7 +2236,6 @@ attributes:
     description: Link to climate resource
     title: link to climate information
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - information
     - link
@@ -2307,7 +2265,6 @@ attributes:
     examples:
     - value: 12.5 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - mean
     - temperature
@@ -2338,7 +2295,6 @@ attributes:
     examples:
     - value: 18 degree Celsius
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - mean
     - season
@@ -2370,7 +2326,6 @@ attributes:
       equivalent value derived by such methods as regional indexes or Isohyetal maps
     title: mean annual precipitation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - mean
     slot_uri: MIXS:0000644
@@ -2395,7 +2350,6 @@ attributes:
       equivalent value derived by such methods as regional indexes or Isohyetal maps
     title: mean seasonal precipitation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000645
     multivalued: false
     alias: season_precpt
@@ -2422,7 +2376,6 @@ attributes:
     description: Link to digitized soil maps or other soil classification information
     title: link to classification information
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - classification
     - information
@@ -2444,7 +2397,6 @@ attributes:
       Resources. The list can be found at http://www.fao.org/nr/land/sols/soil/wrb-soil-maps/reference-groups
     title: soil_taxonomic/FAO classification
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001083
     multivalued: false
     alias: fao_class
@@ -2460,7 +2412,6 @@ attributes:
     description: Soil classification based on local soil classification system
     title: soil_taxonomic/local classification
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{text}'
     slot_uri: MIXS:0000330
     multivalued: false
@@ -2477,7 +2428,6 @@ attributes:
     description: Reference or method used in determining the local soil classification
     title: soil_taxonomic/local classification method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000331
     multivalued: false
     alias: local_class_meth
@@ -2498,7 +2448,6 @@ attributes:
     description: Concentration of organic nitrogen
     title: organic nitrogen
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000205
     multivalued: false
     alias: org_nitro
@@ -2523,7 +2472,6 @@ attributes:
     description: Temperature of the sample at the time of sampling
     title: temperature
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000113
     multivalued: false
     alias: temp
@@ -2577,7 +2525,6 @@ attributes:
       can be separated by pipes
     title: soil type
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{termLabel} [{termID}]
 
       '
@@ -2598,7 +2545,6 @@ attributes:
       lower-level classification
     title: soil type method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000334
     multivalued: false
     alias: soil_type_meth
@@ -2622,7 +2568,6 @@ attributes:
       measure is usually taken with a hand level meter or clinometer
     title: slope gradient
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000646
     multivalued: false
     alias: slope_gradient
@@ -2647,7 +2592,6 @@ attributes:
       influence soil temperature and evapotranspiration
     title: slope aspect
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000647
     multivalued: false
     alias: slope_aspect
@@ -2670,7 +2614,6 @@ attributes:
       area position in relation to surrounding areas
     title: profile position
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001084
     multivalued: false
     alias: profile_position
@@ -2686,7 +2629,6 @@ attributes:
     description: Drainage classification from a standard system such as the USDA system
     title: drainage classification
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001085
     multivalued: false
     alias: drainage_class
@@ -2705,7 +2647,6 @@ attributes:
       clay loam) optional
     title: soil texture
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - soil
     - texture
@@ -2732,7 +2673,6 @@ attributes:
     examples:
     - value: https://uwlab.soils.wisc.edu/wp-content/uploads/sites/17/2015/09/particle_size.pdf
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - method
     - soil
@@ -2759,7 +2699,6 @@ attributes:
       phase of the fluid
     title: pH
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001001
     multivalued: false
     alias: ph
@@ -2782,7 +2721,6 @@ attributes:
     description: Reference or method used in determining pH
     title: pH method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0001106
     multivalued: false
     alias: ph_meth
@@ -2810,7 +2748,6 @@ attributes:
     examples:
     - value: 1.75 milligram per cubic meter
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - organic
     slot_uri: MIXS:0000204
@@ -2837,7 +2774,6 @@ attributes:
     description: Total organic carbon content
     title: total organic carbon
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000533
     multivalued: false
     alias: tot_org_carb
@@ -2862,7 +2798,6 @@ attributes:
     description: Reference or method used in determining total organic carbon
     title: total organic carbon method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000337
     multivalued: false
     alias: tot_org_c_meth
@@ -2884,7 +2819,6 @@ attributes:
     description: Total nitrogen content of the sample
     title: total nitrogen content
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000530
     multivalued: false
     alias: tot_nitro_content
@@ -2909,7 +2843,6 @@ attributes:
     description: Reference or method used in determining the total nitrogen
     title: total nitrogen content method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000338
     multivalued: false
     alias: tot_nitro_cont_meth
@@ -2933,7 +2866,6 @@ attributes:
       to have correction factors used for conversion to the final units
     title: microbial biomass
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000650
     multivalued: false
     alias: microbial_biomass
@@ -2955,7 +2887,6 @@ attributes:
     description: Reference or method used in determining microbial biomass
     title: microbial biomass method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     slot_uri: MIXS:0000339
     alias: micro_biomass_meth
     owner: Soil
@@ -2975,7 +2906,6 @@ attributes:
     description: Link to additional analysis results performed on the sample
     title: links to additional analysis
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - link
     slot_uri: MIXS:0000340
@@ -3007,7 +2937,6 @@ attributes:
     examples:
     - value: mercury;0.09 micrograms per gram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - extreme
     - properties
@@ -3027,7 +2956,6 @@ attributes:
     description: Reference or method used in determining heavy metals
     title: extreme_unusual_properties/heavy metals method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     string_serialization: '{PMID}|{DOI}|{URL}'
     slot_uri: MIXS:0000343
     multivalued: false
@@ -3053,7 +2981,6 @@ attributes:
     description: Aluminum saturation (esp. For tropical soils)
     title: extreme_unusual_properties/Al saturation
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - extreme
     - properties
@@ -3079,7 +3006,6 @@ attributes:
     description: Reference or method used in determining Al saturation
     title: extreme_unusual_properties/Al saturation method
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - extreme
     - method
@@ -3112,7 +3038,6 @@ attributes:
     examples:
     - value: Bicarbonate ion concentration;2075 micromole per kilogram
     from_schema: https://w3id.org/mixs-6-2-rc
-    rank: 1000
     keywords:
     - parameter
     string_serialization: '{text};{float} {unit}'
@@ -3149,31 +3074,57 @@ attributes:
 class_uri: MIXS:0016012
 
 </code></pre>
+
 </details>
-</article>
-</div>
-<script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
-</div>
-</main>
-<footer class="md-footer">
-<div class="md-footer-meta md-typeset">
-<div class="md-footer-meta__inner md-grid">
-<div class="md-copyright">
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
   
   
     Made with
-    <a href="https://squidfunk.github.io/mkdocs-material/" rel="noopener" target="_blank">
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
       Material for MkDocs
     </a>
+  
 </div>
-</div>
-</div>
+      
+    </div>
+  </div>
 </footer>
-</div>
-<div class="md-dialog" data-md-component="dialog">
-<div class="md-dialog__inner md-typeset"></div>
-</div>
-<script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
-<script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
-<script src="https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"></script><script>mermaid.initialize({});</script></body>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "..", "features": ["content.tabs.link"], "search": "../assets/javascripts/workers/search.a264c092.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.6eac0284.min.js"></script>
+      
+        <script src="https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js"></script>
+      
+        <script src="../javascripts/tablesort.js"></script>
+      
+    
+  </body>
 </html>
