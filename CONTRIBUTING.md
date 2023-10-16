@@ -34,13 +34,13 @@ Please carefully read our [Code of Conduct](CODE_OF_CONDUCT.md).
 
 ### Reporting problems with the data model
 
-Please use our [Issue Tracker][issues] to report problems with the ontology.
+Please use our [Issue Tracker][issues] to report problems with MIxS or its code.
 
 <a id="requesting-terms"></a>
 
 ### Requesting new terms
 
-Please use our [Issue Tracker][issues] to request a new term for the ontology.
+Please use our [Issue Tracker][issues] to request a new term for MIxS or its code.
 
 <a id="adding-terms"></a>
 
